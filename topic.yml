@@ -1,0 +1,12 @@
+"cv":
+  "SLAM": "SLAM"
+  "SFM": "\"SFM\"OR\"Structure from Motion\""
+  "Visual Localization": "\"Camera Localization\"OR\"Visual Localization\"OR\"Camera Re-localisation\""
+  "Keypoint Detection": "\"Keypoint Detection\"OR\"Feature Descriptor\""
+  "Image Matching": "\"Image Matching\""
+
+"Federated Learning":
+  "Federated Learning": "\"Federated Learning\"OR\"Federated Machine Learning\""
+  "Personalized": "\"Federated Learning\"AND(\"Personalized\")"
+  "Optimization": "\"Federated Learning\"AND(\"Optimization\"OR\"Optimizated\"OR\"Optimal\")"
+  "Heterogeneous": "\"Federated Learning\"AND(\"Heterogeneous\"OR\"Heterogeneity\"OR\"non-IID\")"
