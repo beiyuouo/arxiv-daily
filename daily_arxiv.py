@@ -265,7 +265,7 @@ if __name__ == "__main__":
             print("Keyword: " + subtopic)
 
             data = get_daily_papers(
-                subtopic, query=keyword, max_results=2)
+                subtopic, query=keyword, max_results=20)
 
             if not topic in data_collector.keys():
                 data_collector[topic] = {}
