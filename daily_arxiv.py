@@ -191,15 +191,16 @@ def json_to_md(filename, to_web=False):
         shutil.copyfile('README.md', os.path.join('docs', 'index.md'))
 
         for topic in data.keys():
+            os.makedirs(os.path.join('docs', topic), exist_ok=True)
             md_indexname = os.path.join('docs', topic, "index.md")
             with open(md_indexname, "w+") as f:
                 f.write(f"# {topic}\n\n")
 
-            for subtopic in data[topic].keys():
-                os.makedirs(os.path.join(
-                    'docs', topic, subtopic), exist_ok=True)
+            print(f'web {topic}')
 
+            for subtopic in data[topic].keys():
                 md_filename = os.path.join('docs', topic, f"{subtopic}.md")
+                print(f'web {subtopic}')
 
                 # clean README.md if daily already exist else create it
                 with open(md_filename, "w+") as f:
