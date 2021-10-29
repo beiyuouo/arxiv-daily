@@ -22,7 +22,7 @@ plugins:
   - search:
       lang:
         - en
-        - zh
+        - ja
 
 extra:
   analytics:

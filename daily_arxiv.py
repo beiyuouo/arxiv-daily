@@ -196,11 +196,11 @@ def json_to_md(filename, to_web=False):
             with open(md_indexname, "w+") as f:
                 f.write(f"# {topic}\n\n")
 
-            print(f'web {topic}')
+            # print(f'web {topic}')
 
             for subtopic in data[topic].keys():
                 md_filename = os.path.join('docs', topic, f"{subtopic}.md")
-                print(f'web {subtopic}')
+                # print(f'web {subtopic}')
 
                 # clean README.md if daily already exist else create it
                 with open(md_filename, "w+") as f:
