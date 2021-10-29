@@ -1,6 +1,6 @@
 ## Updated on 2021.10.29
 
-## cv
+## CV
 
 ### SLAM
 
