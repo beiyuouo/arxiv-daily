@@ -10,7 +10,7 @@
 |**2021-10-31**|**Revealing and Protecting Labels in Distributed Training**|Trung Dang et.al.|[2111.00556v1](http://arxiv.org/abs/2111.00556v1)|**[link](https://github.com/googleinterns/learning-bag-of-words)**|
 |**2021-10-31**|**Wireless Federated Learning over MIMO Networks: Joint Device Scheduling and Beamforming Design**|Shaoming Huang et.al.|[2111.00470v1](http://arxiv.org/abs/2111.00470v1)|null|
 |**2021-10-31**|**DAdaQuant: Doubly-adaptive quantization for communication-efficient Federated Learning**|Robert Hönig et.al.|[2111.00465v1](http://arxiv.org/abs/2111.00465v1)|null|
-|**2021-10-31**|**Efficient passive membership inference attack in federated learning**|Oualid Zari et.al.|[2111.00430v1](http://arxiv.org/abs/2111.00430v1)|null|
+|**2021-10-31**|**Efficient passive membership inference attack in federated learning**|Oualid Zari et.al.|[2111.00430v1](http://arxiv.org/abs/2111.00430v1)|**[link](https://github.com/spin-umass/membershipwhiteboxattacks)**|
 |**2021-10-30**|**Dynamic Differential-Privacy Preserving SGD**|Jian Du et.al.|[2111.00173v1](http://arxiv.org/abs/2111.00173v1)|null|
 |**2021-10-29**|**Federated Semi-Supervised Learning with Class Distribution Mismatch**|Zhiguo Wang et.al.|[2111.00010v1](http://arxiv.org/abs/2111.00010v1)|null|
 |**2021-10-29**|**Improving Fairness via Federated Learning**|Yuchen Zeng et.al.|[2110.15545v1](http://arxiv.org/abs/2110.15545v1)|**[link](https://github.com/yzeng58/improving-fairness-via-data-federation)**|
