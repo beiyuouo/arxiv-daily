@@ -2,6 +2,8 @@
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2021-11-01**|**Resource-Efficient Federated Learning**|Ahmed M. Abdelmoniem et.al.|[2111.01108v1](http://arxiv.org/abs/2111.01108v1)|null|
+|**2021-11-01**|**FedFm: Towards a Robust Federated Learning Approach For Fault Mitigation at the Edge Nodes**|Manupriya Gupta et.al.|[2111.01074v1](http://arxiv.org/abs/2111.01074v1)|null|
 |**2021-10-28**|**FeO2: Federated Learning with Opt-Out Differential Privacy**|Nasser Aldaghri et.al.|[2110.15252v1](http://arxiv.org/abs/2110.15252v1)|null|
 |**2021-10-27**|**Spatio-Temporal Federated Learning for Massive Wireless Edge Networks**|Chun-Hung Liu et.al.|[2110.14578v1](http://arxiv.org/abs/2110.14578v1)|null|
 |**2021-10-27**|**FedPrune: Towards Inclusive Federated Learning**|Muhammad Tahir Munir et.al.|[2110.14205v1](http://arxiv.org/abs/2110.14205v1)|null|

@@ -2,6 +2,9 @@
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2021-11-01**|**FedFm: Towards a Robust Federated Learning Approach For Fault Mitigation at the Edge Nodes**|Manupriya Gupta et.al.|[2111.01074v1](http://arxiv.org/abs/2111.01074v1)|null|
+|**2021-11-01**|**To Talk or to Work: Delay Efficient Federated Learning over Mobile Edge Devices**|Pavana Prakash et.al.|[2111.00637v1](http://arxiv.org/abs/2111.00637v1)|null|
+|**2021-10-31**|**DAdaQuant: Doubly-adaptive quantization for communication-efficient Federated Learning**|Robert Hönig et.al.|[2111.00465v1](http://arxiv.org/abs/2111.00465v1)|null|
 |**2021-10-28**|**DFL: High-Performance Blockchain-Based Federated Learning**|Yongding Tian et.al.|[2110.15457v1](http://arxiv.org/abs/2110.15457v1)|**[link](https://github.com/twoentartian/DFL)**|
 |**2021-10-28**|**FeO2: Federated Learning with Opt-Out Differential Privacy**|Nasser Aldaghri et.al.|[2110.15252v1](http://arxiv.org/abs/2110.15252v1)|null|
 |**2021-10-28**|**Towards Model Agnostic Federated Learning Using Knowledge Distillation**|Andrei Afonin et.al.|[2110.15210v1](http://arxiv.org/abs/2110.15210v1)|null|

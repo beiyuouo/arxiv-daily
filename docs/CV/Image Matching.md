@@ -2,6 +2,7 @@
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2021-10-30**|**A Deep Search for Faint Chandra X-ray Sources, Radio Sources, and Optical Counterparts in NGC 6752**|Haldan N. Cohn et.al.|[2111.00357v1](http://arxiv.org/abs/2111.00357v1)|null|
 |**2021-10-01**|**Robustly Removing Deep Sea Lighting Effects for Visual Mapping of Abyssal Plains**|Kevin Köser et.al.|[2110.00480v1](http://arxiv.org/abs/2110.00480v1)|null|
 |**2021-09-29**|**Visually Grounded Concept Composition**|Bowen Zhang et.al.|[2109.14115v1](http://arxiv.org/abs/2109.14115v1)|null|
 |**2021-09-27**|**HarrisZ$^+$: Harris Corner Selection for Next-Gen Image Matching Pipelines**|Fabio Bellavia et.al.|[2109.12925v3](http://arxiv.org/abs/2109.12925v3)|null|

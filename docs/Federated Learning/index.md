@@ -4,6 +4,15 @@
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2021-11-01**|**Resource-Efficient Federated Learning**|Ahmed M. Abdelmoniem et.al.|[2111.01108v1](http://arxiv.org/abs/2111.01108v1)|null|
+|**2021-11-01**|**FedFm: Towards a Robust Federated Learning Approach For Fault Mitigation at the Edge Nodes**|Manupriya Gupta et.al.|[2111.01074v1](http://arxiv.org/abs/2111.01074v1)|null|
+|**2021-11-01**|**To Talk or to Work: Delay Efficient Federated Learning over Mobile Edge Devices**|Pavana Prakash et.al.|[2111.00637v1](http://arxiv.org/abs/2111.00637v1)|null|
+|**2021-10-31**|**Revealing and Protecting Labels in Distributed Training**|Trung Dang et.al.|[2111.00556v1](http://arxiv.org/abs/2111.00556v1)|**[link](https://github.com/googleinterns/learning-bag-of-words)**|
+|**2021-10-31**|**Wireless Federated Learning over MIMO Networks: Joint Device Scheduling and Beamforming Design**|Shaoming Huang et.al.|[2111.00470v1](http://arxiv.org/abs/2111.00470v1)|null|
+|**2021-10-31**|**DAdaQuant: Doubly-adaptive quantization for communication-efficient Federated Learning**|Robert Hönig et.al.|[2111.00465v1](http://arxiv.org/abs/2111.00465v1)|null|
+|**2021-10-31**|**Efficient passive membership inference attack in federated learning**|Oualid Zari et.al.|[2111.00430v1](http://arxiv.org/abs/2111.00430v1)|null|
+|**2021-10-30**|**Dynamic Differential-Privacy Preserving SGD**|Jian Du et.al.|[2111.00173v1](http://arxiv.org/abs/2111.00173v1)|null|
+|**2021-10-29**|**Federated Semi-Supervised Learning with Class Distribution Mismatch**|Zhiguo Wang et.al.|[2111.00010v1](http://arxiv.org/abs/2111.00010v1)|null|
 |**2021-10-29**|**Improving Fairness via Federated Learning**|Yuchen Zeng et.al.|[2110.15545v1](http://arxiv.org/abs/2110.15545v1)|**[link](https://github.com/yzeng58/improving-fairness-via-data-federation)**|
 |**2021-10-28**|**DFL: High-Performance Blockchain-Based Federated Learning**|Yongding Tian et.al.|[2110.15457v1](http://arxiv.org/abs/2110.15457v1)|**[link](https://github.com/twoentartian/DFL)**|
 |**2021-10-28**|**Communication-Efficient ADMM-based Federated Learning**|Shenglong Zhou et.al.|[2110.15318v1](http://arxiv.org/abs/2110.15318v1)|null|
@@ -56,6 +65,9 @@
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2021-11-01**|**FedFm: Towards a Robust Federated Learning Approach For Fault Mitigation at the Edge Nodes**|Manupriya Gupta et.al.|[2111.01074v1](http://arxiv.org/abs/2111.01074v1)|null|
+|**2021-11-01**|**To Talk or to Work: Delay Efficient Federated Learning over Mobile Edge Devices**|Pavana Prakash et.al.|[2111.00637v1](http://arxiv.org/abs/2111.00637v1)|null|
+|**2021-10-31**|**DAdaQuant: Doubly-adaptive quantization for communication-efficient Federated Learning**|Robert Hönig et.al.|[2111.00465v1](http://arxiv.org/abs/2111.00465v1)|null|
 |**2021-10-28**|**DFL: High-Performance Blockchain-Based Federated Learning**|Yongding Tian et.al.|[2110.15457v1](http://arxiv.org/abs/2110.15457v1)|**[link](https://github.com/twoentartian/DFL)**|
 |**2021-10-28**|**FeO2: Federated Learning with Opt-Out Differential Privacy**|Nasser Aldaghri et.al.|[2110.15252v1](http://arxiv.org/abs/2110.15252v1)|null|
 |**2021-10-28**|**Towards Model Agnostic Federated Learning Using Knowledge Distillation**|Andrei Afonin et.al.|[2110.15210v1](http://arxiv.org/abs/2110.15210v1)|null|
@@ -82,6 +94,8 @@
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2021-11-01**|**Resource-Efficient Federated Learning**|Ahmed M. Abdelmoniem et.al.|[2111.01108v1](http://arxiv.org/abs/2111.01108v1)|null|
+|**2021-11-01**|**FedFm: Towards a Robust Federated Learning Approach For Fault Mitigation at the Edge Nodes**|Manupriya Gupta et.al.|[2111.01074v1](http://arxiv.org/abs/2111.01074v1)|null|
 |**2021-10-28**|**FeO2: Federated Learning with Opt-Out Differential Privacy**|Nasser Aldaghri et.al.|[2110.15252v1](http://arxiv.org/abs/2110.15252v1)|null|
 |**2021-10-27**|**Spatio-Temporal Federated Learning for Massive Wireless Edge Networks**|Chun-Hung Liu et.al.|[2110.14578v1](http://arxiv.org/abs/2110.14578v1)|null|
 |**2021-10-27**|**FedPrune: Towards Inclusive Federated Learning**|Muhammad Tahir Munir et.al.|[2110.14205v1](http://arxiv.org/abs/2110.14205v1)|null|
