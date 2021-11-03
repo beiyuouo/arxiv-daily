@@ -1,4 +1,4 @@
-## Updated on 2021.11.02
+## Updated on 2021.11.03
 
 ## CV
 
@@ -212,7 +212,7 @@
 |**2021-10-22**|**Federated Learning over Wireless IoT Networks with Optimized Communication and Resources**|Hao Chen et.al.|[2110.11775v1](http://arxiv.org/abs/2110.11775v1)|null|
 |**2021-10-21**|**Guess what? You can boost Federated Learning for free**|Akash Dhasade et.al.|[2110.11486v1](http://arxiv.org/abs/2110.11486v1)|null|
 |**2021-10-21**|**SecureBoost+ : A High Performance Gradient Boosting Tree Framework for Large Scale Vertical Federated Learning**|Weijing Chen et.al.|[2110.10927v1](http://arxiv.org/abs/2110.10927v1)|**[link](https://github.com/FederatedAI/FATE)**|
-|**2021-10-20**|**Distributed Reinforcement Learning for Privacy-Preserving Dynamic Edge Caching**|Shengheng Liu et.al.|[2110.10349v1](http://arxiv.org/abs/2110.10349v1)|null|
+|**2021-10-20**|**Distributed Reinforcement Learning for Privacy-Preserving Dynamic Edge Caching**|Shengheng Liu et.al.|[2110.10349v2](http://arxiv.org/abs/2110.10349v2)|null|
 |**2021-10-19**|**TESSERACT: Gradient Flip Score to Secure Federated Learning Against Model Poisoning Attacks**|Atul Sharma et.al.|[2110.10108v1](http://arxiv.org/abs/2110.10108v1)|null|
 |**2021-10-18**|**Towards Federated Bayesian Network Structure Learning with Continuous Optimization**|Ignavier Ng et.al.|[2110.09356v1](http://arxiv.org/abs/2110.09356v1)|null|
 |**2021-10-18**|**Sim-to-Real Transfer in Multi-agent Reinforcement Networking for Federated Edge Computing**|Pinyarash Pinyoanuntapong et.al.|[2110.08952v1](http://arxiv.org/abs/2110.08952v1)|null|
