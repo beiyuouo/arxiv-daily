@@ -2,6 +2,7 @@
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2021-11-02**|**Federated Split Vision Transformer for COVID-19CXR Diagnosis using Task-Agnostic Training**|Sangjoon Park et.al.|[2111.01338v1](http://arxiv.org/abs/2111.01338v1)|null|
 |**2021-11-01**|**Resource-Efficient Federated Learning**|Ahmed M. Abdelmoniem et.al.|[2111.01108v1](http://arxiv.org/abs/2111.01108v1)|null|
 |**2021-11-01**|**FedFm: Towards a Robust Federated Learning Approach For Fault Mitigation at the Edge Nodes**|Manupriya Gupta et.al.|[2111.01074v1](http://arxiv.org/abs/2111.01074v1)|null|
 |**2021-10-28**|**FeO2: Federated Learning with Opt-Out Differential Privacy**|Nasser Aldaghri et.al.|[2110.15252v1](http://arxiv.org/abs/2110.15252v1)|null|
