@@ -5,8 +5,8 @@
 |**2021-11-02**|**FedFly: Towards Migration in Edge-based Distributed Federated Learning**|Rehmat Ullah et.al.|[2111.01516v1](http://arxiv.org/abs/2111.01516v1)|**[link](https://github.com/qub-blesson/fedfly)**|
 |**2021-11-02**|**Practical and Light-weight Secure Aggregation for Federated Submodel Learning**|Jamie Cui et.al.|[2111.01432v1](http://arxiv.org/abs/2111.01432v1)|null|
 |**2021-11-02**|**FedGraph: Federated Graph Learning with Intelligent Sampling**|Fahao Chen et.al.|[2111.01370v1](http://arxiv.org/abs/2111.01370v1)|null|
-|**2021-11-02**|**Federated Split Vision Transformer for COVID-19CXR Diagnosis using Task-Agnostic Training**|Sangjoon Park et.al.|[2111.01338v1](http://arxiv.org/abs/2111.01338v1)|null|
-|**2021-11-01**|**Implicit Model Specialization through DAG-based Decentralized Federated Learning**|Jossekin Beilharz et.al.|[2111.01257v1](http://arxiv.org/abs/2111.01257v1)|**[link](https://github.com/osmhpi/federated-learning-dag)**|
+|**2021-11-02**|**Federated Split Vision Transformer for COVID-19 CXR Diagnosis using Task-Agnostic Training**|Sangjoon Park et.al.|[2111.01338v2](http://arxiv.org/abs/2111.01338v2)|null|
+|**2021-11-01**|**Implicit Model Specialization through DAG-based Decentralized Federated Learning**|Jossekin Beilharz et.al.|[2111.01257v2](http://arxiv.org/abs/2111.01257v2)|**[link](https://github.com/osmhpi/federated-learning-dag)**|
 |**2021-11-01**|**Robust Federated Learning via Over-The-Air Computation**|Houssem Sifaou et.al.|[2111.01221v1](http://arxiv.org/abs/2111.01221v1)|null|
 |**2021-11-01**|**Resource-Efficient Federated Learning**|Ahmed M. Abdelmoniem et.al.|[2111.01108v1](http://arxiv.org/abs/2111.01108v1)|null|
 |**2021-11-01**|**FedFm: Towards a Robust Federated Learning Approach For Fault Mitigation at the Edge Nodes**|Manupriya Gupta et.al.|[2111.01074v1](http://arxiv.org/abs/2111.01074v1)|null|

@@ -3,7 +3,7 @@
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
 |**2021-11-02**|**FedGraph: Federated Graph Learning with Intelligent Sampling**|Fahao Chen et.al.|[2111.01370v1](http://arxiv.org/abs/2111.01370v1)|null|
-|**2021-11-02**|**Federated Split Vision Transformer for COVID-19CXR Diagnosis using Task-Agnostic Training**|Sangjoon Park et.al.|[2111.01338v1](http://arxiv.org/abs/2111.01338v1)|null|
+|**2021-11-02**|**Federated Split Vision Transformer for COVID-19 CXR Diagnosis using Task-Agnostic Training**|Sangjoon Park et.al.|[2111.01338v2](http://arxiv.org/abs/2111.01338v2)|null|
 |**2021-11-01**|**FedFm: Towards a Robust Federated Learning Approach For Fault Mitigation at the Edge Nodes**|Manupriya Gupta et.al.|[2111.01074v1](http://arxiv.org/abs/2111.01074v1)|null|
 |**2021-11-01**|**To Talk or to Work: Delay Efficient Federated Learning over Mobile Edge Devices**|Pavana Prakash et.al.|[2111.00637v1](http://arxiv.org/abs/2111.00637v1)|null|
 |**2021-10-31**|**DAdaQuant: Doubly-adaptive quantization for communication-efficient Federated Learning**|Robert Hönig et.al.|[2111.00465v1](http://arxiv.org/abs/2111.00465v1)|null|

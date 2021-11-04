@@ -2,7 +2,7 @@
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
-|**2021-11-01**|**Implicit Model Specialization through DAG-based Decentralized Federated Learning**|Jossekin Beilharz et.al.|[2111.01257v1](http://arxiv.org/abs/2111.01257v1)|**[link](https://github.com/osmhpi/federated-learning-dag)**|
+|**2021-11-01**|**Implicit Model Specialization through DAG-based Decentralized Federated Learning**|Jossekin Beilharz et.al.|[2111.01257v2](http://arxiv.org/abs/2111.01257v2)|**[link](https://github.com/osmhpi/federated-learning-dag)**|
 |**2021-10-28**|**FeO2: Federated Learning with Opt-Out Differential Privacy**|Nasser Aldaghri et.al.|[2110.15252v1](http://arxiv.org/abs/2110.15252v1)|null|
 |**2021-10-25**|**Optimal Model Averaging: Towards Personalized Collaborative Learning**|Felix Grimberg et.al.|[2110.12946v1](http://arxiv.org/abs/2110.12946v1)|null|
 |**2021-10-19**|**FedParking: A Federated Learning based Parking Space Estimation with Parked Vehicle assisted Edge Computing**|Xumin Huang et.al.|[2110.12876v1](http://arxiv.org/abs/2110.12876v1)|null|
