@@ -2,6 +2,7 @@
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2021-11-03**|**Event and Activity Recognition in Video Surveillance for Cyber-Physical Systems**|Swarnabja Bhaumik et.al.|[2111.02064v1](http://arxiv.org/abs/2111.02064v1)|null|
 |**2021-10-21**|**The black hole-star formation connection over cosmic time**|Chandra B. Singh et.al.|[2110.10993v1](http://arxiv.org/abs/2110.10993v1)|null|
 |**2021-10-21**|**Deep Image Matting with Flexible Guidance Input**|Hang Cheng et.al.|[2110.10898v1](http://arxiv.org/abs/2110.10898v1)|**[link](https://github.com/charch-630/fgi-matting)**|
 |**2021-10-14**|**Modeling dynamic target deformation in camera calibration**|Annika Hagemann et.al.|[2110.07322v1](http://arxiv.org/abs/2110.07322v1)|null|
