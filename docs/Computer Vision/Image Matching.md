@@ -22,5 +22,4 @@
 |**2021-07-19**|**Precise Aerial Image Matching based on Deep Homography Estimation**|Myeong-Seok Oh et.al.|[2107.08768v1](http://arxiv.org/abs/2107.08768v1)|null|
 |**2021-07-14**|**Self-Supervised Multi-Modal Alignment for Whole Body Medical Imaging**|Rhydian Windsor et.al.|[2107.06652v2](http://arxiv.org/abs/2107.06652v2)|**[link](https://github.com/rwindsor1/biobank-self-supervised-alignment)**|
 |**2021-07-07**|**Visual Odometry with an Event Camera Using Continuous Ray Warping and Volumetric Contrast Maximization**|Yifu Wang et.al.|[2107.03011v1](http://arxiv.org/abs/2107.03011v1)|null|
-|**2021-07-06**|**Learning Disentangled Representation Implicitly via Transformer for Occluded Person Re-Identification**|Mengxi Jia et.al.|[2107.02380v1](http://arxiv.org/abs/2107.02380v1)|null|
 

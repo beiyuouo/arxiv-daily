@@ -22,5 +22,4 @@
 |**2021-08-17**|**PR-RRN: Pairwise-Regularized Residual-Recursive Networks for Non-rigid Structure-from-Motion**|Haitian Zeng et.al.|[2108.07506v1](http://arxiv.org/abs/2108.07506v1)|null|
 |**2021-08-16**|**Continuous-Time Spatiotemporal Calibration of a Rolling Shutter Camera-IMU System**|Jianzhu Huai et.al.|[2108.07200v1](http://arxiv.org/abs/2108.07200v1)|**[link](https://github.com/JzHuai0108/kalibr)**|
 |**2021-08-13**|**Context Aware Object Geotagging**|Chao-Jung Liu et.al.|[2108.06302v1](http://arxiv.org/abs/2108.06302v1)|null|
-|**2021-08-04**|**Self-Supervised Learning of Depth and Ego-Motion from Video by Alternative Training and Geometric Constraints from 3D to 2D**|Jiaojiao Fang et.al.|[2108.01980v1](http://arxiv.org/abs/2108.01980v1)|null|
 

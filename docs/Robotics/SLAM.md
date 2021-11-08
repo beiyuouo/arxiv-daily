@@ -20,8 +20,6 @@
 |**2021-10-12**|**Learning Efficient Multi-Agent Cooperative Visual Exploration**|Chao Yu et.al.|[2110.05734v1](http://arxiv.org/abs/2110.05734v1)|null|
 |**2021-10-07**|**Self-Supervised Depth Completion for Active Stereo**|Frederik Warburg et.al.|[2110.03234v1](http://arxiv.org/abs/2110.03234v1)|null|
 |**2021-10-06**|**InterpolationSLAM: A Novel Robust Visual SLAM System in Rotating Scenes**|Zhenkun Zhu et.al.|[2110.02593v1](http://arxiv.org/abs/2110.02593v1)|null|
-|**2021-10-03**|**AEROS: Adaptive RObust least-Squares for Graph-Based SLAM**|Milad Ramezani et.al.|[2110.02018v1](http://arxiv.org/abs/2110.02018v1)|null|
 |**2021-10-04**|**Fast Uncertainty Quantification for Active Graph SLAM**|Julio A. Placed et.al.|[2110.01289v1](http://arxiv.org/abs/2110.01289v1)|**[link](https://github.com/julioplaced/active_graph_slam)**|
 |**2021-10-04**|**Geometry-based Graph Pruning for Lifelong SLAM**|Gerhard Kurz et.al.|[2110.01286v1](http://arxiv.org/abs/2110.01286v1)|null|
-|**2021-10-03**|**Quadrotor Control on $SU(2)\times R^3$ with SLAM Integration**|Marcus Greiff et.al.|[2110.01099v1](http://arxiv.org/abs/2110.01099v1)|null|
 

@@ -22,7 +22,4 @@
 |**2021-08-24**|**Unsupervised Depth Completion with Calibrated Backprojection Layers**|Alex Wong et.al.|[2108.10531v2](http://arxiv.org/abs/2108.10531v2)|**[link](https://github.com/alexklwong/calibrated-backprojection-network)**|
 |**2021-08-23**|**Lightweight Multi-person Total Motion Capture Using Sparse Multi-view Cameras**|Yuxiang Zhang et.al.|[2108.10378v1](http://arxiv.org/abs/2108.10378v1)|null|
 |**2021-08-14**|**Feature Identification and Matching for Hand Hygiene Pose**|Rashmi Bakshi et.al.|[2108.06537v1](http://arxiv.org/abs/2108.06537v1)|null|
-|**2021-08-13**|**EEEA-Net: An Early Exit Evolutionary Neural Architecture Search**|Chakkrit Termritthikun et.al.|[2108.06156v1](http://arxiv.org/abs/2108.06156v1)|**[link](https://github.com/chakkritte/eeea-net)**|
-|**2021-08-13**|**Learning Transferable Parameters for Unsupervised Domain Adaptation**|Zhongyi Han et.al.|[2108.06129v1](http://arxiv.org/abs/2108.06129v1)|**[link](https://github.com/zhyhan/transpar)**|
-|**2021-08-05**|**A Low Rank Promoting Prior for Unsupervised Contrastive Learning**|Yu Wang et.al.|[2108.02696v1](http://arxiv.org/abs/2108.02696v1)|null|
 

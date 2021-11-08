@@ -1,4 +1,29 @@
-# CV
+# Robotics
+
+## Robotics
+
+| Publish Date | Title | Authors | PDF | Code |
+|:---------|:-----------------------|:---------|:------|:------|
+|**2021-11-05**|**Dynamic Human-Robot Role Allocation based on Human Ergonomics Risk Prediction and Robot Actions Adaptation**|Elena Merlo et.al.|[2111.03630v1](http://arxiv.org/abs/2111.03630v1)|null|
+|**2021-11-05**|**Synchronized Smartphone Video Recording System of Depth and RGB Image Frames with Sub-millisecond Precision**|Marsel Faizullin et.al.|[2111.03552v1](http://arxiv.org/abs/2111.03552v1)|null|
+|**2021-11-05**|**Optimal Inverted Landing in a Small Aerial Robot with Varied Approach Velocities and Landing Gear Designs**|Bryan Habas et.al.|[2111.03539v1](http://arxiv.org/abs/2111.03539v1)|null|
+|**2021-11-05**|**Multivariable Super-Twisting Algorithm for Systems with Uncertain Input Matrix and Perturbations**|Jaime A. Moreno et.al.|[2111.03535v1](http://arxiv.org/abs/2111.03535v1)|null|
+|**2021-11-05**|**Disengagement Cause-and-Effect Relationships Extraction Using an NLP Pipeline**|Yangtao Zhang et.al.|[2111.03511v1](http://arxiv.org/abs/2111.03511v1)|null|
+|**2021-11-05**|**Event-based Motion Segmentation by Cascaded Two-Level Multi-Model Fitting**|Xiuyuan Lu et.al.|[2111.03483v1](http://arxiv.org/abs/2111.03483v1)|null|
+|**2021-11-05**|**DriveGuard: Robustification of Automated Driving Systems with Deep Spatio-Temporal Convolutional Autoencoder**|Andreas Papachristodoulou et.al.|[2111.03480v1](http://arxiv.org/abs/2111.03480v1)|null|
+|**2021-11-05**|**Small UAVs-supported Autonomous Generation of Fine-grained 3D Indoor Radio Environmental Maps**|Ken Mendes et.al.|[2111.03451v1](http://arxiv.org/abs/2111.03451v1)|null|
+|**2021-11-05**|**MSC-VO: Exploiting Manhattan and Structural Constraints for Visual Odometry**|Joan P. Company-Corcoles et.al.|[2111.03408v1](http://arxiv.org/abs/2111.03408v1)|null|
+|**2021-11-05**|**LiODOM: Adaptive Local Mapping for Robust LiDAR-Only Odometry**|Emilio Garcia-Fidalgo et.al.|[2111.03393v1](http://arxiv.org/abs/2111.03393v1)|null|
+|**2021-11-05**|**Cooperative Transportation of UAVs Without Inter-UAV Communication**|Pin-Xian Wu et.al.|[2111.03283v1](http://arxiv.org/abs/2111.03283v1)|null|
+|**2021-11-05**|**RASEC: Rescaling Acquisition Strategy with Energy Constraints under SE-OU Fusion Kernel for Active Trachea Palpation and Incision Recommendation in Laryngeal Region**|Wenchao Yue et.al.|[2111.03235v1](http://arxiv.org/abs/2111.03235v1)|null|
+|**2021-11-05**|**A First-Order Approach to Model Simultaneous Control of Multiple Microrobots**|Logan E. Beaver et.al.|[2111.03232v1](http://arxiv.org/abs/2111.03232v1)|null|
+|**2021-11-05**|**LILA: Language-Informed Latent Actions**|Siddharth Karamcheti et.al.|[2111.03205v1](http://arxiv.org/abs/2111.03205v1)|null|
+|**2021-11-04**|**Value Function Spaces: Skill-Centric State Abstractions for Long-Horizon Reasoning**|Dhruv Shah et.al.|[2111.03189v1](http://arxiv.org/abs/2111.03189v1)|null|
+|**2021-11-04**|**My House, My Rules: Learning Tidying Preferences with Graph Neural Networks**|Ivan Kapelyukh et.al.|[2111.03112v1](http://arxiv.org/abs/2111.03112v1)|null|
+|**2021-11-04**|**Modeling and Control of an Omnidirectional Micro Aerial Vehicle Equipped with a Soft Robotic Arm**|Róbert Szász et.al.|[2111.03111v1](http://arxiv.org/abs/2111.03111v1)|null|
+|**2021-11-04**|**Learning to Manipulate Tools by Aligning Simulation to Video Demonstration**|Kateryna Zorina et.al.|[2111.03088v1](http://arxiv.org/abs/2111.03088v1)|null|
+|**2021-11-04**|**Generalization in Dexterous Manipulation via Geometry-Aware Multi-Task Learning**|Wenlong Huang et.al.|[2111.03062v1](http://arxiv.org/abs/2111.03062v1)|null|
+|**2021-11-04**|**A System for General In-Hand Object Re-Orientation**|Tao Chen et.al.|[2111.03043v1](http://arxiv.org/abs/2111.03043v1)|null|
 
 ## SLAM
 
@@ -22,10 +47,8 @@
 |**2021-10-12**|**Learning Efficient Multi-Agent Cooperative Visual Exploration**|Chao Yu et.al.|[2110.05734v1](http://arxiv.org/abs/2110.05734v1)|null|
 |**2021-10-07**|**Self-Supervised Depth Completion for Active Stereo**|Frederik Warburg et.al.|[2110.03234v1](http://arxiv.org/abs/2110.03234v1)|null|
 |**2021-10-06**|**InterpolationSLAM: A Novel Robust Visual SLAM System in Rotating Scenes**|Zhenkun Zhu et.al.|[2110.02593v1](http://arxiv.org/abs/2110.02593v1)|null|
-|**2021-10-03**|**AEROS: Adaptive RObust least-Squares for Graph-Based SLAM**|Milad Ramezani et.al.|[2110.02018v1](http://arxiv.org/abs/2110.02018v1)|null|
 |**2021-10-04**|**Fast Uncertainty Quantification for Active Graph SLAM**|Julio A. Placed et.al.|[2110.01289v1](http://arxiv.org/abs/2110.01289v1)|**[link](https://github.com/julioplaced/active_graph_slam)**|
 |**2021-10-04**|**Geometry-based Graph Pruning for Lifelong SLAM**|Gerhard Kurz et.al.|[2110.01286v1](http://arxiv.org/abs/2110.01286v1)|null|
-|**2021-10-03**|**Quadrotor Control on $SU(2)\times R^3$ with SLAM Integration**|Marcus Greiff et.al.|[2110.01099v1](http://arxiv.org/abs/2110.01099v1)|null|
 
 ## SFM
 
@@ -51,7 +74,6 @@
 |**2021-08-17**|**PR-RRN: Pairwise-Regularized Residual-Recursive Networks for Non-rigid Structure-from-Motion**|Haitian Zeng et.al.|[2108.07506v1](http://arxiv.org/abs/2108.07506v1)|null|
 |**2021-08-16**|**Continuous-Time Spatiotemporal Calibration of a Rolling Shutter Camera-IMU System**|Jianzhu Huai et.al.|[2108.07200v1](http://arxiv.org/abs/2108.07200v1)|**[link](https://github.com/JzHuai0108/kalibr)**|
 |**2021-08-13**|**Context Aware Object Geotagging**|Chao-Jung Liu et.al.|[2108.06302v1](http://arxiv.org/abs/2108.06302v1)|null|
-|**2021-08-04**|**Self-Supervised Learning of Depth and Ego-Motion from Video by Alternative Training and Geometric Constraints from 3D to 2D**|Jiaojiao Fang et.al.|[2108.01980v1](http://arxiv.org/abs/2108.01980v1)|null|
 
 ## Visual Localization
 
@@ -77,58 +99,4 @@
 |**2021-06-04**|**RoadMap: A Light-Weight Semantic Map for Visual Localization towards Autonomous Driving**|Tong Qin et.al.|[2106.02527v1](http://arxiv.org/abs/2106.02527v1)|null|
 |**2021-05-27**|**i3dLoc: Image-to-range Cross-domain Localization Robust to Inconsistent Environmental Conditions**|Peng Yin et.al.|[2105.12883v2](http://arxiv.org/abs/2105.12883v2)|null|
 |**2021-05-24**|**3D-Aware Ellipse Prediction for Object-Based Camera Pose Estimation**|Matthieu Zins et.al.|[2105.11494v1](http://arxiv.org/abs/2105.11494v1)|**[link](https://github.com/zinsmatt/3D-Aware-Ellipses-for-Visual-Localization)**|
-
-## Keypoint Detection
-
-| Publish Date | Title | Authors | PDF | Code |
-|:---------|:-----------------------|:---------|:------|:------|
-|**2021-11-04**|**Voxel-based 3D Detection and Reconstruction of Multiple Objects from a Single Image**|Feng Liu et.al.|[2111.03098v1](http://arxiv.org/abs/2111.03098v1)|null|
-|**2021-11-01**|**Learning Event-based Spatio-Temporal Feature Descriptors via Local Synaptic Plasticity: A Biologically-realistic Perspective of Computer Vision**|Ali Safa et.al.|[2111.00791v2](http://arxiv.org/abs/2111.00791v2)|null|
-|**2021-10-30**|**Geometry-Aware Hierarchical Bayesian Learning on Manifolds**|Yonghui Fan et.al.|[2111.00184v1](http://arxiv.org/abs/2111.00184v1)|null|
-|**2021-10-26**|**CoFiNet: Reliable Coarse-to-fine Correspondences for Robust Point Cloud Registration**|Hao Yu et.al.|[2110.14076v1](http://arxiv.org/abs/2110.14076v1)|**[link](https://github.com/haoyu94/coarse-to-fine-correspondences)**|
-|**2021-10-23**|**HWTool: Fully Automatic Mapping of an Extensible C++ Image Processing Language to Hardware**|James Hegarty et.al.|[2110.12106v1](http://arxiv.org/abs/2110.12106v1)|null|
-|**2021-10-18**|**Keypoint-Based Bimanual Shaping of Deformable Linear Objects under Environmental Constraints using Hierarchical Action Planning**|Shengzeng Huo et.al.|[2110.08962v1](http://arxiv.org/abs/2110.08962v1)|null|
-|**2021-10-11**|**High-order Tensor Pooling with Attention for Action Recognition**|Piotr Koniusz et.al.|[2110.05216v1](http://arxiv.org/abs/2110.05216v1)|null|
-|**2021-10-10**|**Digging Into Self-Supervised Learning of Feature Descriptors**|Iaroslav Melekhov et.al.|[2110.04773v1](http://arxiv.org/abs/2110.04773v1)|null|
-|**2021-10-04**|**BPFNet: A Unified Framework for Bimodal Palmprint Alignment and Fusion**|Zhaoqun Li et.al.|[2110.01179v1](http://arxiv.org/abs/2110.01179v1)|**[link](https://github.com/dxbdxx/bpfnet)**|
-|**2021-10-01**|**Machine learning aided noise filtration and signal classification for CREDO experiment**|Łukasz Bibrzycki et.al.|[2110.00297v1](http://arxiv.org/abs/2110.00297v1)|null|
-|**2021-09-28**|**PDC-Net+: Enhanced Probabilistic Dense Correspondence Network**|Prune Truong et.al.|[2109.13912v2](http://arxiv.org/abs/2109.13912v2)|**[link](https://github.com/PruneTruong/DenseMatching)**|
-|**2021-09-27**|**HarrisZ$^+$: Harris Corner Selection for Next-Gen Image Matching Pipelines**|Fabio Bellavia et.al.|[2109.12925v3](http://arxiv.org/abs/2109.12925v3)|null|
-|**2021-09-24**|**Catadioptric Stereo on a Smartphone**|Kristijan Bartol et.al.|[2109.11872v1](http://arxiv.org/abs/2109.11872v1)|null|
-|**2021-09-20**|**Semi-supervised Dense Keypointsusing Unlabeled Multiview Images**|Zhixuan Yu et.al.|[2109.09299v1](http://arxiv.org/abs/2109.09299v1)|null|
-|**2021-08-31**|**A Novel Dataset for Keypoint Detection of quadruped Animals from Images**|Prianka Banik et.al.|[2108.13958v1](http://arxiv.org/abs/2108.13958v1)|**[link](https://github.com/prinik/awa-pose)**|
-|**2021-08-27**|**A Matching Algorithm based on Image Attribute Transfer and Local Features for Underwater Acoustic and Optical Images**|Xiaoteng Zhou et.al.|[2108.12151v1](http://arxiv.org/abs/2108.12151v1)|null|
-|**2021-08-26**|**Unsupervised domain adaptation for clinician pose estimation and instance segmentation in the OR**|Vinkle Srivastav et.al.|[2108.11801v2](http://arxiv.org/abs/2108.11801v2)|**[link](https://github.com/camma-public/hpe-adaptor)**|
-|**2021-08-24**|**Unsupervised Depth Completion with Calibrated Backprojection Layers**|Alex Wong et.al.|[2108.10531v2](http://arxiv.org/abs/2108.10531v2)|**[link](https://github.com/alexklwong/calibrated-backprojection-network)**|
-|**2021-08-23**|**Lightweight Multi-person Total Motion Capture Using Sparse Multi-view Cameras**|Yuxiang Zhang et.al.|[2108.10378v1](http://arxiv.org/abs/2108.10378v1)|null|
-|**2021-08-14**|**Feature Identification and Matching for Hand Hygiene Pose**|Rashmi Bakshi et.al.|[2108.06537v1](http://arxiv.org/abs/2108.06537v1)|null|
-|**2021-08-13**|**EEEA-Net: An Early Exit Evolutionary Neural Architecture Search**|Chakkrit Termritthikun et.al.|[2108.06156v1](http://arxiv.org/abs/2108.06156v1)|**[link](https://github.com/chakkritte/eeea-net)**|
-|**2021-08-13**|**Learning Transferable Parameters for Unsupervised Domain Adaptation**|Zhongyi Han et.al.|[2108.06129v1](http://arxiv.org/abs/2108.06129v1)|**[link](https://github.com/zhyhan/transpar)**|
-|**2021-08-05**|**A Low Rank Promoting Prior for Unsupervised Contrastive Learning**|Yu Wang et.al.|[2108.02696v1](http://arxiv.org/abs/2108.02696v1)|null|
-
-## Image Matching
-
-| Publish Date | Title | Authors | PDF | Code |
-|:---------|:-----------------------|:---------|:------|:------|
-|**2021-10-30**|**A Deep Search for Faint Chandra X-ray Sources, Radio Sources, and Optical Counterparts in NGC 6752**|Haldan N. Cohn et.al.|[2111.00357v1](http://arxiv.org/abs/2111.00357v1)|null|
-|**2021-10-01**|**Robustly Removing Deep Sea Lighting Effects for Visual Mapping of Abyssal Plains**|Kevin Köser et.al.|[2110.00480v1](http://arxiv.org/abs/2110.00480v1)|null|
-|**2021-09-29**|**Visually Grounded Concept Composition**|Bowen Zhang et.al.|[2109.14115v1](http://arxiv.org/abs/2109.14115v1)|null|
-|**2021-09-27**|**HarrisZ$^+$: Harris Corner Selection for Next-Gen Image Matching Pipelines**|Fabio Bellavia et.al.|[2109.12925v3](http://arxiv.org/abs/2109.12925v3)|null|
-|**2021-09-20**|**Viewpoint Invariant Dense Matching for Visual Geolocalization**|Gabriele Berton et.al.|[2109.09827v1](http://arxiv.org/abs/2109.09827v1)|**[link](https://github.com/gmberton/geo_warp)**|
-|**2021-09-20**|**Image Subtraction in Fourier Space**|Lei Hu et.al.|[2109.09334v1](http://arxiv.org/abs/2109.09334v1)|null|
-|**2021-09-10**|**Line as a Visual Sentence: Context-aware Line Descriptor for Visual Localization**|Sungho Yoon et.al.|[2109.04753v1](http://arxiv.org/abs/2109.04753v1)|**[link](https://github.com/yosungho/LineTR)**|
-|**2021-09-08**|**Matching in the Dark: A Dataset for Matching Image Pairs of Low-light Scenes**|Wenzheng Song et.al.|[2109.03585v2](http://arxiv.org/abs/2109.03585v2)|null|
-|**2021-08-27**|**A Matching Algorithm based on Image Attribute Transfer and Local Features for Underwater Acoustic and Optical Images**|Xiaoteng Zhou et.al.|[2108.12151v1](http://arxiv.org/abs/2108.12151v1)|null|
-|**2021-08-27**|**Matching Underwater Sonar Images by the Learned Descriptor Based on Style Transfer Method**|Xiaoteng Zhou et.al.|[2108.12072v1](http://arxiv.org/abs/2108.12072v1)|null|
-|**2021-08-26**|**Efficient Joint Object Matching via Linear Programming**|Antonio De Rosa et.al.|[2108.11911v1](http://arxiv.org/abs/2108.11911v1)|null|
-|**2021-08-18**|**Quality assessment of image matchers for DSM generation -- a comparative study based on UAV images**|Rongjun Qin et.al.|[2108.08369v1](http://arxiv.org/abs/2108.08369v1)|null|
-|**2021-08-18**|**Pixel-Perfect Structure-from-Motion with Featuremetric Refinement**|Philipp Lindenberger et.al.|[2108.08291v1](http://arxiv.org/abs/2108.08291v1)|**[link](https://github.com/cvg/pixel-perfect-sfm)**|
-|**2021-08-18**|**Effect of Parameter Optimization on Classical and Learning-based Image Matching Methods**|Ufuk Efe et.al.|[2108.08179v2](http://arxiv.org/abs/2108.08179v2)|**[link](https://github.com/ufukefe/ime)**|
-|**2021-08-10**|**Method Towards CVPR 2021 SimLocMatch Challenge**|Xiaopeng Bi et.al.|[2108.04466v2](http://arxiv.org/abs/2108.04466v2)|null|
-|**2021-08-10**|**Method Towards CVPR 2021 Image Matching Challenge**|Xiaopeng Bi et.al.|[2108.04453v2](http://arxiv.org/abs/2108.04453v2)|null|
-|**2021-08-02**|**Forward-Looking Sonar Patch Matching: Modern CNNs, Ensembling, and Uncertainty**|Arka Mallick et.al.|[2108.01066v1](http://arxiv.org/abs/2108.01066v1)|null|
-|**2021-07-19**|**Precise Aerial Image Matching based on Deep Homography Estimation**|Myeong-Seok Oh et.al.|[2107.08768v1](http://arxiv.org/abs/2107.08768v1)|null|
-|**2021-07-14**|**Self-Supervised Multi-Modal Alignment for Whole Body Medical Imaging**|Rhydian Windsor et.al.|[2107.06652v2](http://arxiv.org/abs/2107.06652v2)|**[link](https://github.com/rwindsor1/biobank-self-supervised-alignment)**|
-|**2021-07-07**|**Visual Odometry with an Event Camera Using Continuous Ray Warping and Volumetric Contrast Maximization**|Yifu Wang et.al.|[2107.03011v1](http://arxiv.org/abs/2107.03011v1)|null|
-|**2021-07-06**|**Learning Disentangled Representation Implicitly via Transformer for Occluded Person Re-Identification**|Mengxi Jia et.al.|[2107.02380v1](http://arxiv.org/abs/2107.02380v1)|null|
 

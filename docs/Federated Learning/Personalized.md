@@ -22,7 +22,4 @@
 |**2021-10-07**|**Enabling On-Device Training of Speech Recognition Models with Federated Dropout**|Dhruv Guliani et.al.|[2110.03634v1](http://arxiv.org/abs/2110.03634v1)|null|
 |**2021-10-06**|**SSFL: Tackling Label Deficiency in Federated Learning via Personalized Self-Supervision**|Chaoyang He et.al.|[2110.02470v1](http://arxiv.org/abs/2110.02470v1)|null|
 |**2021-10-01**|**Personalized Retrogress-Resilient Framework for Real-World Medical Federated Learning**|Zhen Chen et.al.|[2110.00394v1](http://arxiv.org/abs/2110.00394v1)|**[link](https://github.com/cityu-aim-group/prr-fl)**|
-|**2021-09-30**|**Federated Learning in ASR: Not as Easy as You Think**|Wentao Yu et.al.|[2109.15108v1](http://arxiv.org/abs/2109.15108v1)|**[link](https://github.com/rub-ksv/federated-learning-asr)**|
-|**2021-09-29**|**Secure Multi-Party Computation based Privacy Preserving Data Analysis in Healthcare IoT Systems**|Kevser Şahinbaş et.al.|[2109.14334v1](http://arxiv.org/abs/2109.14334v1)|null|
-|**2021-09-29**|**LightSecAgg: Rethinking Secure Aggregation in Federated Learning**|Chien-Sheng Yang et.al.|[2109.14236v1](http://arxiv.org/abs/2109.14236v1)|null|
 
