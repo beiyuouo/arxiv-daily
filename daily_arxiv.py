@@ -268,10 +268,12 @@ if __name__ == "__main__":
 
             # topic = keyword.replace("\"","")
             print("Keyword: " + subtopic)
-
-            data = get_daily_papers(
-                subtopic, query=keyword, max_results=10)
-            time.sleep(random.randint(2, 10))
+            try:
+                data = get_daily_papers(
+                    subtopic, query=keyword, max_results=10)
+            except:
+                print(f'CANNOT get {subtopic} data from arxiv')
+            # time.sleep(random.randint(2, 10))
 
             if not topic in data_collector.keys():
                 data_collector[topic] = {}
