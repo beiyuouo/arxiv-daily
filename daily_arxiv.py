@@ -271,7 +271,7 @@ if __name__ == "__main__":
 
             data = get_daily_papers(
                 subtopic, query=keyword, max_results=10)
-            time.sleep(random.randint(1, 3))
+            time.sleep(random.randint(2, 10))
 
             if not topic in data_collector.keys():
                 data_collector[topic] = {}
