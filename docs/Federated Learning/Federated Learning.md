@@ -2,6 +2,10 @@
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
+|**2021-11-05**|**Data Selection for Efficient Model Update in Federated Learning**|Hongrui Shi et.al.|[2111.03512v1](http://arxiv.org/abs/2111.03512v1)|null|
+|**2021-11-05**|**FedLess: Secure and Scalable Federated Learning Using Serverless Computing**|Andreas Grafberger et.al.|[2111.03396v1](http://arxiv.org/abs/2111.03396v1)|null|
+|**2021-11-05**|**Federated Learning Attacks Revisited: A Critical Discussion of Gaps, Assumptions, and Evaluation Setups**|Aidmar Wainakh et.al.|[2111.03363v1](http://arxiv.org/abs/2111.03363v1)|null|
+|**2021-11-05**|**DVFL: A Vertical Federated Learning Method for Dynamic Data**|Yuzhi Liang et.al.|[2111.03341v1](http://arxiv.org/abs/2111.03341v1)|null|
 |**2021-11-04**|**Parameterized Knowledge Transfer for Personalized Federated Learning**|Jie Zhang et.al.|[2111.02862v1](http://arxiv.org/abs/2111.02862v1)|null|
 |**2021-11-04**|**A Cyber Threat Intelligence Sharing Scheme based on Federated Learning for Network Intrusion Detection**|Mohanad Sarhan et.al.|[2111.02791v1](http://arxiv.org/abs/2111.02791v1)|null|
 |**2021-11-04**|**TEE-based Selective Testing of Local Workers in Federated Learning Systems**|Wensheng Zhang et.al.|[2111.02662v1](http://arxiv.org/abs/2111.02662v1)|null|

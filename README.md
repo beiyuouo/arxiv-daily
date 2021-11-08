@@ -6,6 +6,7 @@
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2021-11-05**|**MSC-VO: Exploiting Manhattan and Structural Constraints for Visual Odometry**|Joan P. Company-Corcoles et.al.|[2111.03408v1](http://arxiv.org/abs/2111.03408v1)|null|
 |**2021-10-31**|**Loop closure detection using local 3D deep descriptors**|Youjie Zhou et.al.|[2111.00440v1](http://arxiv.org/abs/2111.00440v1)|null|
 |**2021-10-27**|**Millimeter Wave Wireless Assisted Robot Navigation with Link State Classification**|Mingsheng Yin et.al.|[2110.14789v2](http://arxiv.org/abs/2110.14789v2)|null|
 |**2021-10-27**|**Efficient Placard Discovery for Semantic Mapping During Frontier Exploration**|David Balaban et.al.|[2110.14742v1](http://arxiv.org/abs/2110.14742v1)|null|
@@ -83,6 +84,7 @@
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2021-11-04**|**Voxel-based 3D Detection and Reconstruction of Multiple Objects from a Single Image**|Feng Liu et.al.|[2111.03098v1](http://arxiv.org/abs/2111.03098v1)|null|
 |**2021-11-01**|**Learning Event-based Spatio-Temporal Feature Descriptors via Local Synaptic Plasticity: A Biologically-realistic Perspective of Computer Vision**|Ali Safa et.al.|[2111.00791v2](http://arxiv.org/abs/2111.00791v2)|null|
 |**2021-10-30**|**Geometry-Aware Hierarchical Bayesian Learning on Manifolds**|Yonghui Fan et.al.|[2111.00184v1](http://arxiv.org/abs/2111.00184v1)|null|
 |**2021-10-26**|**CoFiNet: Reliable Coarse-to-fine Correspondences for Robust Point Cloud Registration**|Hao Yu et.al.|[2110.14076v1](http://arxiv.org/abs/2110.14076v1)|**[link](https://github.com/haoyu94/coarse-to-fine-correspondences)**|
@@ -138,6 +140,10 @@
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2021-11-05**|**Data Selection for Efficient Model Update in Federated Learning**|Hongrui Shi et.al.|[2111.03512v1](http://arxiv.org/abs/2111.03512v1)|null|
+|**2021-11-05**|**FedLess: Secure and Scalable Federated Learning Using Serverless Computing**|Andreas Grafberger et.al.|[2111.03396v1](http://arxiv.org/abs/2111.03396v1)|null|
+|**2021-11-05**|**Federated Learning Attacks Revisited: A Critical Discussion of Gaps, Assumptions, and Evaluation Setups**|Aidmar Wainakh et.al.|[2111.03363v1](http://arxiv.org/abs/2111.03363v1)|null|
+|**2021-11-05**|**DVFL: A Vertical Federated Learning Method for Dynamic Data**|Yuzhi Liang et.al.|[2111.03341v1](http://arxiv.org/abs/2111.03341v1)|null|
 |**2021-11-04**|**Parameterized Knowledge Transfer for Personalized Federated Learning**|Jie Zhang et.al.|[2111.02862v1](http://arxiv.org/abs/2111.02862v1)|null|
 |**2021-11-04**|**A Cyber Threat Intelligence Sharing Scheme based on Federated Learning for Network Intrusion Detection**|Mohanad Sarhan et.al.|[2111.02791v1](http://arxiv.org/abs/2111.02791v1)|null|
 |**2021-11-04**|**TEE-based Selective Testing of Local Workers in Federated Learning Systems**|Wensheng Zhang et.al.|[2111.02662v1](http://arxiv.org/abs/2111.02662v1)|null|
@@ -249,6 +255,8 @@
 
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
+|**2021-11-05**|**Data Selection for Efficient Model Update in Federated Learning**|Hongrui Shi et.al.|[2111.03512v1](http://arxiv.org/abs/2111.03512v1)|null|
+|**2021-11-05**|**FedLess: Secure and Scalable Federated Learning Using Serverless Computing**|Andreas Grafberger et.al.|[2111.03396v1](http://arxiv.org/abs/2111.03396v1)|null|
 |**2021-11-04**|**Parameterized Knowledge Transfer for Personalized Federated Learning**|Jie Zhang et.al.|[2111.02862v1](http://arxiv.org/abs/2111.02862v1)|null|
 |**2021-11-04**|**A Cyber Threat Intelligence Sharing Scheme based on Federated Learning for Network Intrusion Detection**|Mohanad Sarhan et.al.|[2111.02791v1](http://arxiv.org/abs/2111.02791v1)|null|
 |**2021-11-03**|**Federated Expectation Maximization with heterogeneity mitigation and variance reduction**|Aymeric Dieuleveut et.al.|[2111.02083v1](http://arxiv.org/abs/2111.02083v1)|null|
