@@ -743,7 +743,7 @@
 |**2021-11-05**|**Guaranteed blind deconvolution and demixing via hierarchically sparse reconstruction**|Axel Flinth et.al.|[2111.03486v1](http://arxiv.org/abs/2111.03486v1)|null|
 |**2021-11-05**|**Improving Visual Quality of Image Synthesis by A Token-based Generator with Transformers**|Yanhong Zeng et.al.|[2111.03481v1](http://arxiv.org/abs/2111.03481v1)|null|
 |**2021-11-05**|**Sampling Equivariant Self-attention Networks for Object Detection in Aerial Images**|Guo-Ye Yang et.al.|[2111.03420v1](http://arxiv.org/abs/2111.03420v1)|null|
-|**2021-11-05**|**A Deep Learning Generative Model Approach for Image Synthesis of Plant Leaves**|Alessandrop Benfenati et.al.|[2111.03388v1](http://arxiv.org/abs/2111.03388v1)|null|
+|**2021-11-05**|**A Deep Learning Generative Model Approach for Image Synthesis of Plant Leaves**|Alessandro Benfenati et.al.|[2111.03388v1](http://arxiv.org/abs/2111.03388v1)|null|
 |**2021-11-05**|**Hepatic vessel segmentation based on 3Dswin-transformer with inductive biased multi-head self-attention**|Mian Wu et.al.|[2111.03368v1](http://arxiv.org/abs/2111.03368v1)|null|
 |**2021-11-05**|**Semi-measures and their Fourier transform**|Timo Spindeler et.al.|[2111.03304v1](http://arxiv.org/abs/2111.03304v1)|null|
 |**2021-11-05**|**Multi-breather solutions to the Sasa-Satsuma equation**|Chengfa Wu et.al.|[2111.03266v1](http://arxiv.org/abs/2111.03266v1)|null|
@@ -842,7 +842,7 @@
 |---|---|---|---|---|
 |**2021-11-05**|**MSC-VO: Exploiting Manhattan and Structural Constraints for Visual Odometry**|Joan P. Company-Corcoles et.al.|[2111.03408v1](http://arxiv.org/abs/2111.03408v1)|null|
 |**2021-10-31**|**Loop closure detection using local 3D deep descriptors**|Youjie Zhou et.al.|[2111.00440v1](http://arxiv.org/abs/2111.00440v1)|null|
-|**2021-10-27**|**Millimeter Wave Wireless Assisted Robot Navigation with Link State Classification**|Mingsheng Yin et.al.|[2110.14789v2](http://arxiv.org/abs/2110.14789v2)|null|
+|**2021-10-27**|**Millimeter Wave Wireless Assisted Robot Navigation with Link State Classification**|Mingsheng Yin et.al.|[2110.14789v2](http://arxiv.org/abs/2110.14789v2)|**[link](https://github.com/nyu-wireless/mmwRobotNav)**|
 |**2021-10-27**|**Efficient Placard Discovery for Semantic Mapping During Frontier Exploration**|David Balaban et.al.|[2110.14742v1](http://arxiv.org/abs/2110.14742v1)|null|
 |**2021-10-26**|**Robust Multi-view Registration of Point Sets with Laplacian Mixture Model**|Jin Zhang et.al.|[2110.13744v1](http://arxiv.org/abs/2110.13744v1)|null|
 |**2021-10-25**|**WOLF: A modular estimation framework for robotics based on factor graphs**|Joan Sola et.al.|[2110.12919v1](http://arxiv.org/abs/2110.12919v1)|null|
