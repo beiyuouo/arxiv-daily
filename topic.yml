@@ -1,12 +1,58 @@
-"CV":
-  "SLAM": "SLAM"
-  "SFM": "\"SFM\"OR\"Structure from Motion\""
-  "Visual Localization": "\"Camera Localization\"OR\"Visual Localization\"OR\"Camera Re-localisation\""
-  "Keypoint Detection": "\"Keypoint Detection\"OR\"Feature Descriptor\""
-  "Image Matching": "\"Image Matching\""
+"Computer Vision":
+  "Image Classification": '"Image Classification"'
+  "Keypoint Detection": '"Keypoint Detection"OR"Feature Descriptor"'
+  "Image Matching": '"Image Matching"'
+  "Semantic Segmentation": '"Semantic Segmentation"'
+  "Instance Segmentation": '"Instance Segmentation"'
+  "Object Detection": '"Object Detection"OR"Object Detector"'
+  "Object Tracking": '"Object Tracking"OR"Visual Object Tracking"'
+  "Multi-Object Tracking": '"Multi-Object Tracking"OR"Multiple Ojbect Tracking"OR"MOT"OR"Multiple Visual Object Tracking"'
+
+"3D Vision":
+  "3D Object Detection": '"3D Object Detection"OR"3D Object Detector"OR"Point Cloud Object Detection"'
+  "3D Object Tracking": '"3D Object Tracking"OR"Point Cloud Object Tracking"OR"3D Multi-Object Tracking"'
+  "Point Cloud": '"Point Cloud"'
+  "Point Cloud Completion": '"Point Cloud Completion"'
+  "Point Cloud Segmentation": '"Point Cloud Segmentation"'
+  "Point Cloud Matching": '"Point Cloud Matching"'
+  "Point Cloud Registration": '"Point Cloud Registration"'
 
 "Federated Learning":
-  "Federated Learning": "\"Federated Learning\"OR\"Federated Machine Learning\""
-  "Personalized": "\"Federated Learning\"AND(\"Personalized\")"
-  "Optimization": "\"Federated Learning\"AND(\"Optimization\"OR\"Optimizated\"OR\"Optimal\")"
-  "Heterogeneous": "\"Federated Learning\"AND(\"Heterogeneous\"OR\"Heterogeneity\"OR\"non-IID\")"
+  "Federated Learning": '"Federated Learning"OR"Federated Machine Learning"'
+  "Personalized": '"Federated Learning"AND("Personalized")'
+  "Optimization": '"Federated Learning"AND("Optimization"OR"Optimizated"OR"Optimal")'
+  "Heterogeneous": '"Federated Learning"AND("Heterogeneous"OR"Heterogeneity"OR"non-IID")'
+  "Asynchronous": '"Federated Learning"AND("Asynchronous"OR"Async"OR"FedAsync")'
+  "Benchmark": '"Federated Learning"AND"Benchmark"'
+  "Dataset": '"Federated Learning"AND"Dataset"'
+  "Framework": '"Federated Learning"AND"Framework"'
+
+"Few-shot Learning":
+  "Few-shot Learning": '"Few-shot Learning"OR"Few-shot"OR"Meta-Learning"OR"One-shot Learning"'
+  "One-shot Learning": '"One-shot Learning"'
+  "Meta Learning": '"Meta Learning"OR"Meta-Learning"'
+
+"Unsupervised Learning":
+  "Unsupervised Learning": '"Unsupervised Learning"'
+
+"Transfer Learning":
+  "Transfer Learning": '"Transfer Learning"OR"Transfer Machine Learning"'
+
+"Contrastive Learning":
+  "Contrastive Learning": '"Contrastive Learning"'
+
+"Reinforcement Learning":
+  "Reinforcement Learning": '"Reinforcement Learning"OR"RL"'
+
+"Transformer":
+  "Transformer": '"Transformer"'
+  "Vision Transformer": '"Vision Transformer"OR"Computer Vision Transformer"'
+
+"Graph Neural Network":
+  "Graph Neural Network": '"Graph Neural Network"'
+
+"Robotics":
+  "Robotics": '"Robotics"'
+  "SLAM": '"SLAM"'
+  "SFM": '"SFM"OR"Structure from Motion"'
+  "Visual Localization": '"Camera Localization"OR"Visual Localization"OR"Camera Re-localisation"'
