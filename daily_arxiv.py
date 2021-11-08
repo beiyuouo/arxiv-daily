@@ -16,6 +16,8 @@ import arxiv
 import os
 import shutil
 import yaml
+import time
+import random
 try:
     from yaml import CLoader as Loader, CDumper as Dumper
 except ImportError:
@@ -269,6 +271,7 @@ if __name__ == "__main__":
 
             data = get_daily_papers(
                 subtopic, query=keyword, max_results=20)
+            time.sleep(random.randint(1, 5)*0.1)
 
             if not topic in data_collector.keys():
                 data_collector[topic] = {}
