@@ -11,7 +11,7 @@ repo_url: https://github.com/beiyuouo/arxiv-daily
 markdown_extensions:
   - def_list
   - pymdownx.tasklist:
-        custom_checkbox: true
+      custom_checkbox: true
   - attr_list
   - md_in_html
   - pymdownx.emoji:
