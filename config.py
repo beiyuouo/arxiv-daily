@@ -1,13 +1,19 @@
+import os
 from os.path import dirname, join, abspath
 from sys import platform
 
 import pytz
 from loguru import logger
 
+
 # 定位项目根目录
 SERVER_DIR_PROJECT = dirname(__file__) if "win" in platform else abspath(".")
 
 SERVER_PATH_README = join(SERVER_DIR_PROJECT, "README.md")
+
+SERVER_PATH_DOCS = join(SERVER_DIR_PROJECT, "docs")
+
+os.makedirs(SERVER_PATH_DOCS, exist_ok=True)
 
 # 文件数据库 目录根
 SERVER_DIR_DATABASE = join(SERVER_DIR_PROJECT, "database")

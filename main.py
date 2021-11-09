@@ -7,30 +7,31 @@
 @Email   :   bj.yan.pa@qq.com
 @License :   Apache License 2.0
 """
-import sys  # 导入sys模块
-from config import (
-    SERVER_PATH_TOPIC,
-    SERVER_DIR_STORAGE,
-    SERVER_PATH_README,
-    SERVER_PATH_STORAGE_MD,
-    TIME_ZONE_CN,
-    logger
-)
-from fire import Fire
-import yaml
-import arxiv
-import requests
-from datetime import datetime
-from gevent.queue import Queue
-import gevent
+
 import json.decoder
 import os.path
 
 from gevent import monkey
 
 monkey.patch_all()
+import gevent
+from gevent.queue import Queue
+from datetime import datetime
+import requests
+import arxiv
+import yaml
 
-sys.setrecursionlimit(3000)
+from fire import Fire
+
+from config import (
+    SERVER_PATH_TOPIC,
+    SERVER_DIR_STORAGE,
+    SERVER_PATH_README,
+    SERVER_PATH_DOCS,
+    SERVER_PATH_STORAGE_MD,
+    TIME_ZONE_CN,
+    logger
+)
 
 
 class ToolBox:
@@ -232,6 +233,7 @@ class _OverloadTasks:
         self.storage_path_by_date = SERVER_PATH_STORAGE_MD.format(
             ToolBox.log_date('file'))
         self.storage_path_readme = SERVER_PATH_README
+        self.storage_path_docs = SERVER_PATH_DOCS
 
     # -------------------
     # Private API
@@ -275,7 +277,15 @@ class _OverloadTasks:
         @param obj_: database:将 Markdown 模板存档至 database/store 中。其他值，替换根目录下的 README
         @return:
         """
-        path_ = self.storage_path_by_date if obj_ == "database" else self.storage_path_readme
+        path_factory = {
+            'database': self.storage_path_by_date,
+            'readme': self.storage_path_readme,
+            'docs': self.storage_path_docs
+        }
+        if obj_ not in path_factory.keys():
+            path_ = path_factory['readme']
+        else:
+            path_ = path_factory[obj_]
         with open(path_, "w", encoding="utf8") as f:
             for i in template:
                 f.write(i)

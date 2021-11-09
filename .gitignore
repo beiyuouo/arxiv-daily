@@ -134,3 +134,4 @@ dmypy.json
 
 .idea
 database/logs
+.vscode
