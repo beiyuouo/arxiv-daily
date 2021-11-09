@@ -7,21 +7,6 @@
 @Email   :   bj.yan.pa@qq.com
 @License :   Apache License 2.0
 """
-import json.decoder
-import os.path
-
-from gevent import monkey
-
-monkey.patch_all()
-import gevent
-from gevent.queue import Queue
-from datetime import datetime
-import requests
-import arxiv
-import yaml
-
-from fire import Fire
-
 from config import (
     SERVER_PATH_TOPIC,
     SERVER_DIR_STORAGE,
@@ -30,6 +15,19 @@ from config import (
     TIME_ZONE_CN,
     logger
 )
+from fire import Fire
+import yaml
+import arxiv
+import requests
+from datetime import datetime
+from gevent.queue import Queue
+import gevent
+import json.decoder
+import os.path
+
+from gevent import monkey
+
+monkey.patch_all()
 
 
 class ToolBox:
@@ -200,7 +198,8 @@ class CoroutineSpeedup:
             file_obj[md_obj["hook"]] += md_obj["content"]
 
         # 生成 Markdown 模板文件
-        template_ = ot.generate_markdown_template(content="".join(list(file_obj.values())))
+        template_ = ot.generate_markdown_template(
+            content="".join(list(file_obj.values())))
         # 存储 Markdown 模板文件
         ot.storage(template_, obj_="database")
 
@@ -227,7 +226,8 @@ class _OverloadTasks:
         # yyyy-mm-dd
         self.update_time = ToolBox.log_date(mode="log")
 
-        self.storage_path_by_date = SERVER_PATH_STORAGE_MD.format(ToolBox.log_date('file'))
+        self.storage_path_by_date = SERVER_PATH_STORAGE_MD.format(
+            ToolBox.log_date('file'))
         self.storage_path_readme = SERVER_PATH_README
 
     # -------------------
@@ -245,8 +245,10 @@ class _OverloadTasks:
     def _generate_markdown_table_content(self, paper: dict):
         paper['publish_time'] = f"**{paper['publish_time']}**"
         paper['title'] = f"**{paper['title']}**"
-        _pdf = self._set_markdown_hyperlink(text=paper['id'], link=paper['paper_url'])
-        _repo = self._set_markdown_hyperlink(text="link", link=paper['repo']) if "http" in paper['repo'] else "null"
+        _pdf = self._set_markdown_hyperlink(
+            text=paper['id'], link=paper['paper_url'])
+        _repo = self._set_markdown_hyperlink(
+            text="link", link=paper['repo']) if "http" in paper['repo'] else "null"
 
         line = f"|{paper['publish_time']}" \
                f"|{paper['title']}" \
@@ -297,7 +299,8 @@ class _OverloadTasks:
         _subtopic_md = f"\n### {_subtopic}\n"
         _fields_md = f"|{'|'.join(_fields)}|\n"
         _style_md = f"|{'|'.join([self._set_style_to('center') for _ in range(len(_fields))])}|\n"
-        table_lines = "".join([self._generate_markdown_table_content(paper) for paper in _paper_obj.values()])
+        table_lines = "".join([self._generate_markdown_table_content(
+            paper) for paper in _paper_obj.values()])
 
         _content_md = _subtopic_md + _fields_md + _style_md + table_lines
 
