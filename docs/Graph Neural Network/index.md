@@ -5,7 +5,7 @@
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
 |**2021-11-05**|**Recognizing Vector Graphics without Rasterization**|Xinyang Jiang et.al.|[2111.03281v1](http://arxiv.org/abs/2111.03281v1)|null|
-|**2021-11-05**|**Graph Denoising with Framelet Regularizer**|Bingxin Zhou et.al.|[2111.03264v1](http://arxiv.org/abs/2111.03264v1)|null|
+|**2021-11-05**|**Graph Denoising with Framelet Regularizer**|Bingxin Zhou et.al.|[2111.03264v1](http://arxiv.org/abs/2111.03264v1)|**[link](https://github.com/bzho3923/gnn_dot)**|
 |**2021-11-05**|**Collaborative Graph Contrastive Learning: Data Augmentation Composition May Not be Necessary for Graph Representation Learning**|Yuxiang Ren et.al.|[2111.03262v1](http://arxiv.org/abs/2111.03262v1)|null|
 |**2021-11-05**|**Augmentations in Graph Contrastive Learning: Current Methodological Flaws & Towards Better Practices**|Puja Trivedi et.al.|[2111.03220v1](http://arxiv.org/abs/2111.03220v1)|null|
 |**2021-11-04**|**My House, My Rules: Learning Tidying Preferences with Graph Neural Networks**|Ivan Kapelyukh et.al.|[2111.03112v1](http://arxiv.org/abs/2111.03112v1)|null|

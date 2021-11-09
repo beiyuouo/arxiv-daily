@@ -4,7 +4,7 @@
 |:---------|:-----------------------|:---------|:------|:------|
 |**2021-11-05**|**Collaborative Graph Contrastive Learning: Data Augmentation Composition May Not be Necessary for Graph Representation Learning**|Yuxiang Ren et.al.|[2111.03262v1](http://arxiv.org/abs/2111.03262v1)|null|
 |**2021-11-05**|**Augmentations in Graph Contrastive Learning: Current Methodological Flaws & Towards Better Practices**|Puja Trivedi et.al.|[2111.03220v1](http://arxiv.org/abs/2111.03220v1)|null|
-|**2021-11-04**|**Hard Negative Sampling via Regularized Optimal Transport for Contrastive Representation Learning**|Ruijie Jiang et.al.|[2111.03169v1](http://arxiv.org/abs/2111.03169v1)|null|
+|**2021-11-04**|**Hard Negative Sampling via Regularized Optimal Transport for Contrastive Representation Learning**|Ruijie Jiang et.al.|[2111.03169v1](http://arxiv.org/abs/2111.03169v1)|**[link](https://github.com/rjiang03/Hard-Negative-Sampling-via-Regularized-Optimal-Transport-for-Contrastive-Representation-Learning)**|
 |**2021-11-04**|**Online Continual Learning via Multiple Deep Metric Learning and Uncertainty-guided Episodic Memory Replay -- 3rd Place Solution for ICCV 2021 Workshop SSLAD Track 3A Continual Object Classification**|Muhammad Rifki Kurniawan et.al.|[2111.02757v1](http://arxiv.org/abs/2111.02757v1)|**[link](https://github.com/mrifkikurniawan/sslad)**|
 |**2021-11-04**|**MixSiam: A Mixture-based Approach to Self-supervised Representation Learning**|Xiaoyang Guo et.al.|[2111.02679v1](http://arxiv.org/abs/2111.02679v1)|null|
 |**2021-11-03**|**Video Salient Object Detection via Contrastive Features and Attention Modules**|Yi-Wen Chen et.al.|[2111.02368v1](http://arxiv.org/abs/2111.02368v1)|null|

@@ -1,4 +1,4 @@
-## Updated on 2021.11.08
+## Updated on 2021.11.09
 
 > Welcome to contribute! Add your topics and keywords in `topic.yml`
 
@@ -137,7 +137,7 @@
 |**2021-11-05**|**Recognizing Vector Graphics without Rasterization**|Xinyang Jiang et.al.|[2111.03281v1](http://arxiv.org/abs/2111.03281v1)|null|
 |**2021-11-05**|**Remote Sensing Image Super-resolution and Object Detection: Benchmark and State of the Art**|Yi Wang et.al.|[2111.03260v1](http://arxiv.org/abs/2111.03260v1)|null|
 |**2021-11-05**|**Fast Camouflaged Object Detection via Edge-based Reversible Re-calibration Network**|Ge-Peng Ji et.al.|[2111.03216v1](http://arxiv.org/abs/2111.03216v1)|null|
-|**2021-11-04**|**Addressing Multiple Salient Object Detection via Dual-Space Long-Range Dependencies**|Bowen Deng et.al.|[2111.03195v1](http://arxiv.org/abs/2111.03195v1)|null|
+|**2021-11-04**|**Addressing Multiple Salient Object Detection via Dual-Space Long-Range Dependencies**|Bowen Deng et.al.|[2111.03195v1](http://arxiv.org/abs/2111.03195v1)|**[link](https://github.com/ericdengbowen/dslrdnet)**|
 |**2021-11-04**|**Bootstrap Your Object Detector via Mixed Training**|Mengde Xu et.al.|[2111.03056v1](http://arxiv.org/abs/2111.03056v1)|**[link](https://github.com/mendelxu/mixtraining)**|
 |**2021-11-04**|**Towards Panoptic 3D Parsing for Single Image in the Wild**|Sainan Liu et.al.|[2111.03039v1](http://arxiv.org/abs/2111.03039v1)|null|
 |**2021-11-04**|**LVIS Challenge Track Technical Report 1st Place Solution: Distribution Balanced and Boundary Refinement for Large Vocabulary Instance Segmentation**|WeiFu Fu et.al.|[2111.02668v2](http://arxiv.org/abs/2111.02668v2)|null|
@@ -259,7 +259,7 @@
 |---|---|---|---|---|
 |**2021-11-05**|**Interpreting Representation Quality of DNNs for 3D Point Cloud Processing**|Wen Shen et.al.|[2111.03549v1](http://arxiv.org/abs/2111.03549v1)|null|
 |**2021-11-05**|**LiODOM: Adaptive Local Mapping for Robust LiDAR-Only Odometry**|Emilio Garcia-Fidalgo et.al.|[2111.03393v1](http://arxiv.org/abs/2111.03393v1)|null|
-|**2021-11-05**|**Boundary Estimation from Point Clouds: Algorithms, Guarantees and Applications**|Jeff Calder et.al.|[2111.03217v1](http://arxiv.org/abs/2111.03217v1)|null|
+|**2021-11-05**|**Boundary Estimation from Point Clouds: Algorithms, Guarantees and Applications**|Jeff Calder et.al.|[2111.03217v1](http://arxiv.org/abs/2111.03217v1)|**[link](https://github.com/sangmin-park0/boundarytest)**|
 |**2021-11-04**|**Generalization in Dexterous Manipulation via Geometry-Aware Multi-Task Learning**|Wenlong Huang et.al.|[2111.03062v1](http://arxiv.org/abs/2111.03062v1)|null|
 |**2021-11-04**|**A Quantization QoE Evaluation Approach in6DoF Point Cloud Video Streaming**|Jie Li et.al.|[2111.02985v1](http://arxiv.org/abs/2111.02985v1)|null|
 |**2021-11-03**|**Efficient 3D Deep LiDAR Odometry**|Guangming Wang et.al.|[2111.02135v1](http://arxiv.org/abs/2111.02135v1)|**[link](https://github.com/IRMVLab/PWCLONet)**|
@@ -684,7 +684,7 @@
 |---|---|---|---|---|
 |**2021-11-05**|**Collaborative Graph Contrastive Learning: Data Augmentation Composition May Not be Necessary for Graph Representation Learning**|Yuxiang Ren et.al.|[2111.03262v1](http://arxiv.org/abs/2111.03262v1)|null|
 |**2021-11-05**|**Augmentations in Graph Contrastive Learning: Current Methodological Flaws & Towards Better Practices**|Puja Trivedi et.al.|[2111.03220v1](http://arxiv.org/abs/2111.03220v1)|null|
-|**2021-11-04**|**Hard Negative Sampling via Regularized Optimal Transport for Contrastive Representation Learning**|Ruijie Jiang et.al.|[2111.03169v1](http://arxiv.org/abs/2111.03169v1)|null|
+|**2021-11-04**|**Hard Negative Sampling via Regularized Optimal Transport for Contrastive Representation Learning**|Ruijie Jiang et.al.|[2111.03169v1](http://arxiv.org/abs/2111.03169v1)|**[link](https://github.com/rjiang03/Hard-Negative-Sampling-via-Regularized-Optimal-Transport-for-Contrastive-Representation-Learning)**|
 |**2021-11-04**|**Online Continual Learning via Multiple Deep Metric Learning and Uncertainty-guided Episodic Memory Replay -- 3rd Place Solution for ICCV 2021 Workshop SSLAD Track 3A Continual Object Classification**|Muhammad Rifki Kurniawan et.al.|[2111.02757v1](http://arxiv.org/abs/2111.02757v1)|**[link](https://github.com/mrifkikurniawan/sslad)**|
 |**2021-11-04**|**MixSiam: A Mixture-based Approach to Self-supervised Representation Learning**|Xiaoyang Guo et.al.|[2111.02679v1](http://arxiv.org/abs/2111.02679v1)|null|
 |**2021-11-03**|**Video Salient Object Detection via Contrastive Features and Attention Modules**|Yi-Wen Chen et.al.|[2111.02368v1](http://arxiv.org/abs/2111.02368v1)|null|
@@ -711,14 +711,14 @@
 |---|---|---|---|---|
 |**2021-11-05**|**Regular Decision Processes for Grid Worlds**|Nicky Lenaers et.al.|[2111.03647v1](http://arxiv.org/abs/2111.03647v1)|null|
 |**2021-11-05**|**Adaptive Low-Pass Filtering using Sliding Window Gaussian Processes**|Alejandro J. Ordóñez-Conejo et.al.|[2111.03617v1](http://arxiv.org/abs/2111.03617v1)|null|
-|**2021-11-05**|**Cross Modality 3D Navigation Using Reinforcement Learning and Neural Style Transfer**|Cesare Magnetti et.al.|[2111.03485v1](http://arxiv.org/abs/2111.03485v1)|null|
+|**2021-11-05**|**Cross Modality 3D Navigation Using Reinforcement Learning and Neural Style Transfer**|Cesare Magnetti et.al.|[2111.03485v1](http://arxiv.org/abs/2111.03485v1)|**[link](https://github.com/cesaremagnetti/automaticusnavigation)**|
 |**2021-11-05**|**Supervised Advantage Actor-Critic for Recommender Systems**|Xin Xin et.al.|[2111.03474v1](http://arxiv.org/abs/2111.03474v1)|null|
 |**2021-11-05**|**Perturbational Complexity by Distribution Mismatch: A Systematic Analysis of Reinforcement Learning in Reproducing Kernel Hilbert Space**|Jihao Long et.al.|[2111.03469v1](http://arxiv.org/abs/2111.03469v1)|null|
 |**2021-11-05**|**Reinforcement Learning Approach to Shortcuts between Thermodynamic States with Extra Constraints**|Rongxing Xu et.al.|[2111.03432v1](http://arxiv.org/abs/2111.03432v1)|null|
 |**2021-11-05**|**Learning to Cooperate with Unseen Agent via Meta-Reinforcement Learning**|Rujikorn Charakorn et.al.|[2111.03431v1](http://arxiv.org/abs/2111.03431v1)|null|
-|**2021-11-05**|**FINN.no Slates Dataset: A new Sequential Dataset Logging Interactions, allViewed Items and Click Responses/No-Click for Recommender Systems Research**|Simen Eide et.al.|[2111.03340v1](http://arxiv.org/abs/2111.03340v1)|null|
+|**2021-11-05**|**FINN.no Slates Dataset: A new Sequential Dataset Logging Interactions, allViewed Items and Click Responses/No-Click for Recommender Systems Research**|Simen Eide et.al.|[2111.03340v1](http://arxiv.org/abs/2111.03340v1)|**[link](https://github.com/finn-no/recsys-slates-dataset)**|
 |**2021-11-04**|**Value Function Spaces: Skill-Centric State Abstractions for Long-Horizon Reasoning**|Dhruv Shah et.al.|[2111.03189v1](http://arxiv.org/abs/2111.03189v1)|null|
-|**2021-11-04**|**Infinite Time Horizon Safety of Bayesian Neural Networks**|Mathias Lechner et.al.|[2111.03165v1](http://arxiv.org/abs/2111.03165v1)|null|
+|**2021-11-04**|**Infinite Time Horizon Safety of Bayesian Neural Networks**|Mathias Lechner et.al.|[2111.03165v1](http://arxiv.org/abs/2111.03165v1)|**[link](https://github.com/mlech26l/bayesian_nn_safety)**|
 |**2021-11-04**|**Successor Feature Neural Episodic Control**|David Emukpere et.al.|[2111.03110v1](http://arxiv.org/abs/2111.03110v1)|null|
 |**2021-11-04**|**Learning to Manipulate Tools by Aligning Simulation to Video Demonstration**|Kateryna Zorina et.al.|[2111.03088v1](http://arxiv.org/abs/2111.03088v1)|null|
 |**2021-11-04**|**Generalization in Dexterous Manipulation via Geometry-Aware Multi-Task Learning**|Wenlong Huang et.al.|[2111.03062v1](http://arxiv.org/abs/2111.03062v1)|null|
@@ -789,7 +789,7 @@
 |Publish Date|Title|Authors|PDF|Code|
 |---|---|---|---|---|
 |**2021-11-05**|**Recognizing Vector Graphics without Rasterization**|Xinyang Jiang et.al.|[2111.03281v1](http://arxiv.org/abs/2111.03281v1)|null|
-|**2021-11-05**|**Graph Denoising with Framelet Regularizer**|Bingxin Zhou et.al.|[2111.03264v1](http://arxiv.org/abs/2111.03264v1)|null|
+|**2021-11-05**|**Graph Denoising with Framelet Regularizer**|Bingxin Zhou et.al.|[2111.03264v1](http://arxiv.org/abs/2111.03264v1)|**[link](https://github.com/bzho3923/gnn_dot)**|
 |**2021-11-05**|**Collaborative Graph Contrastive Learning: Data Augmentation Composition May Not be Necessary for Graph Representation Learning**|Yuxiang Ren et.al.|[2111.03262v1](http://arxiv.org/abs/2111.03262v1)|null|
 |**2021-11-05**|**Augmentations in Graph Contrastive Learning: Current Methodological Flaws & Towards Better Practices**|Puja Trivedi et.al.|[2111.03220v1](http://arxiv.org/abs/2111.03220v1)|null|
 |**2021-11-04**|**My House, My Rules: Learning Tidying Preferences with Graph Neural Networks**|Ivan Kapelyukh et.al.|[2111.03112v1](http://arxiv.org/abs/2111.03112v1)|null|
