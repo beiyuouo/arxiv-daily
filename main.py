@@ -201,6 +201,12 @@ class CoroutineSpeedup:
                 file_obj[md_obj["hook"]] = md_obj["hook"]
             file_obj[md_obj["hook"]] += md_obj["content"]
 
+            # 生成 mkdocs 所需文件
+            os.makedirs(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}'), exist_ok=True)
+            with open(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}', f'{context["subtopic"]}.md'), 'w') as f:
+                f.write(md_obj["content"])
+               
+
         # 生成 Markdown 模板文件
         template_ = ot.generate_markdown_template(
             content="".join(list(file_obj.values())))
