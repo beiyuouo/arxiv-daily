@@ -30,6 +30,8 @@ from gevent import monkey
 
 monkey.patch_all()
 
+sys.setrecursionlimit(3000)
+
 
 class ToolBox:
     @staticmethod
