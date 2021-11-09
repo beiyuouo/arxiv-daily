@@ -10,6 +10,7 @@
 
 import json.decoder
 import os.path
+import shutil
 
 from gevent import monkey
 
@@ -362,7 +363,8 @@ class Scaffold:
             with open(SERVER_PATH_README, "w", encoding="utf8") as f:
                 for i in template_:
                     f.write(i)
-
+            
+            shutil.copyfile(SERVER_PATH_README, os.path.join(SERVER_PATH_DOCS, "index.md"))
 
 if __name__ == "__main__":
     Fire(Scaffold)

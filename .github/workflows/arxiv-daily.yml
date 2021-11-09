@@ -55,7 +55,7 @@ jobs:
       # TODO [√] 更新 mkdocs
       # ============================================
       - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        uses: mhausenblas/mkdocs-deploy-gh-pages@nomaterial
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REQUIREMENTS: requirements-mkdocs.txt
