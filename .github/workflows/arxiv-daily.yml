@@ -23,10 +23,10 @@ jobs:
       # ============================================
       # TODO [√] 创建 Python3.6+ 编译环境
       # ============================================
-      - name: Set up Python 3.8
+      - name: Set up Python 3.6
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: 3.6
       # ============================================
       # TODO [√] 安装 Project 第三方依赖
       # ============================================
@@ -55,6 +55,6 @@ jobs:
       # TODO [√] 更新 mkdocs
       # ============================================
       - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@nomaterial
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

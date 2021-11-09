@@ -7,6 +7,7 @@
 @Email   :   bj.yan.pa@qq.com
 @License :   Apache License 2.0
 """
+import sys  # 导入sys模块
 from config import (
     SERVER_PATH_TOPIC,
     SERVER_DIR_STORAGE,
@@ -28,6 +29,8 @@ import os.path
 from gevent import monkey
 
 monkey.patch_all()
+
+sys.setrecursionlimit(3000)
 
 
 class ToolBox:
