@@ -34,7 +34,7 @@
 
 "Unsupervised Learning":
   "Unsupervised Learning": '"Unsupervised Learning"'
-  "GAN":'"GAN"OR"Generative Adversarial Network"'
+  "GAN": '"GAN"OR"Generative Adversarial Network"'
 
 "Transfer Learning":
   "Transfer Learning": '"Transfer Learning"OR"Transfer Machine Learning"'
@@ -57,9 +57,9 @@
   "SLAM": '"SLAM"'
   "SFM": '"SFM"OR"Structure from Motion"'
   "Visual Localization": '"Camera Localization"OR"Visual Localization"OR"Camera Re-localisation"'
-  
+
 "Multi-modal":
-  "Multi-modal":'"Multi-modal"OR"Multimodal"OR"Multi modal"'
-  "VQA":'"VQA"OR"Visual Question Answering"OR"Visual Reasoning"OR"Knowledge-based  Graph"OR"Causal Inference"'
-  "Image Caption":'"Image Caption"OR"Video Caption"'
-  "Text and Image Generation":'"Text and Image Generation"OR"Text-Image Generation"OR"Image and Text Generation"OR"Image-Text Generation"OR"Text-to-Image"OR"Image-to-Text"OR"Language-Image"OR"Image-Language"'
+  "Multi-modal": '"Multi-modal"OR"Multimodal"OR"Multi modal"'
+  "VQA": '"VQA"OR"Visual Question Answering"OR"Visual Reasoning"OR"Knowledge-based  Graph"OR"Causal Inference"'
+  "Image Caption": '"Image Caption"OR"Video Caption"'
+  "Text and Image Generation": '"Text and Image Generation"OR"Text-Image Generation"OR"Image and Text Generation"OR"Image-Text Generation"OR"Text-to-Image"OR"Image-to-Text"OR"Language-Image"OR"Image-Language"'
