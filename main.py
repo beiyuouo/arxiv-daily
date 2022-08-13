@@ -399,12 +399,14 @@ class Scaffold:
             # make history directory and copy files in SERVER_DIR_STORAGE to history directory
             if not os.path.exists(SERVER_DIR_HISTORY):
                 os.mkdir(SERVER_DIR_HISTORY)
+            logger.info(f"{SERVER_DIR_HISTORY} is created.")
             for file in os.listdir(SERVER_DIR_STORAGE):
                 file_format = os.path.basename(file).split("_")[-1]
                 shutil.copyfile(
                     os.path.join(SERVER_DIR_STORAGE, file),
                     os.path.join(SERVER_DIR_HISTORY, file_format),
                 )
+                logger.info(f"{file} is copied to {SERVER_DIR_HISTORY}.")
 
 
 if __name__ == "__main__":
