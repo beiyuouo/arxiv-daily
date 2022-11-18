@@ -1,0 +1,6229 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Few shot Learning - arxiv-daily</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-145083103-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");ga("send","event","feedback","click",t,e),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){ga("send","pageview",e.pathname)})});var e=document.createElement("script");e.async=!0,e.src="https://www.google-analytics.com/analytics.js",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#few-shot-learning" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="arxiv-daily" class="md-header__button md-logo" aria-label="arxiv-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            arxiv-daily
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Few shot Learning
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/beiyuouo/arxiv-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="arxiv-daily" class="md-nav__button md-logo" aria-label="arxiv-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    arxiv-daily
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/beiyuouo/arxiv-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          3D Vision
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="3D Vision" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          3D Vision
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3D%20Vision/3D%20Object%20Detection/" class="md-nav__link">
+        3D Object Detection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3D%20Vision/3D%20Object%20Tracking/" class="md-nav__link">
+        3D Object Tracking
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3D%20Vision/Point%20Cloud%20Completion/" class="md-nav__link">
+        Point Cloud Completion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3D%20Vision/Point%20Cloud%20Matching/" class="md-nav__link">
+        Point Cloud Matching
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3D%20Vision/Point%20Cloud%20Registration/" class="md-nav__link">
+        Point Cloud Registration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3D%20Vision/Point%20Cloud%20Segmentation/" class="md-nav__link">
+        Point Cloud Segmentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3D%20Vision/Point%20Cloud/" class="md-nav__link">
+        Point Cloud
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Computer Vision
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Computer Vision" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Computer Vision
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Computer%20Vision/Image%20Classification/" class="md-nav__link">
+        Image Classification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Computer%20Vision/Image%20Matching/" class="md-nav__link">
+        Image Matching
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Computer%20Vision/Instance%20Segmentation/" class="md-nav__link">
+        Instance Segmentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Computer%20Vision/Keypoint%20Detection/" class="md-nav__link">
+        Keypoint Detection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Computer%20Vision/Multi-Object%20Tracking/" class="md-nav__link">
+        Multi Object Tracking
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Computer%20Vision/Object%20Detection/" class="md-nav__link">
+        Object Detection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Computer%20Vision/Object%20Tracking/" class="md-nav__link">
+        Object Tracking
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Computer%20Vision/Semantic%20Segmentation/" class="md-nav__link">
+        Semantic Segmentation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Contrastive Learning
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Contrastive Learning" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Contrastive Learning
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Contrastive%20Learning/Contrastive%20Learning/" class="md-nav__link">
+        Contrastive Learning
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Federated Learning
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Federated Learning" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Federated Learning
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Federated%20Learning/Asynchronous/" class="md-nav__link">
+        Asynchronous
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Federated%20Learning/Benchmark/" class="md-nav__link">
+        Benchmark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Federated%20Learning/Dataset/" class="md-nav__link">
+        Dataset
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Federated%20Learning/Federated%20Learning/" class="md-nav__link">
+        Federated Learning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Federated%20Learning/Framework/" class="md-nav__link">
+        Framework
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Federated%20Learning/Heterogeneous/" class="md-nav__link">
+        Heterogeneous
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Federated%20Learning/Optimization/" class="md-nav__link">
+        Optimization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Federated%20Learning/Personalized/" class="md-nav__link">
+        Personalized
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Few shot Learning
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Few shot Learning" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Few shot Learning
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Few shot Learning
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Few shot Learning
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#few-shot-learning" class="md-nav__link">
+    Few-shot Learning
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Meta%20Learning/" class="md-nav__link">
+        Meta Learning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../One-shot%20Learning/" class="md-nav__link">
+        One shot Learning
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Graph Neural Network
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Graph Neural Network" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Graph Neural Network
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Graph%20Neural%20Network/Graph%20Neural%20Network/" class="md-nav__link">
+        Graph Neural Network
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Multi modal
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Multi modal" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Multi modal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Multi-modal/Image%20Caption/" class="md-nav__link">
+        Image Caption
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Multi-modal/Multi-modal/" class="md-nav__link">
+        Multi modal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Multi-modal/Text%20and%20Image%20Generation/" class="md-nav__link">
+        Text and Image Generation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Multi-modal/VQA/" class="md-nav__link">
+        VQA
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Reinforcement Learning
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reinforcement Learning" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Reinforcement Learning
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Reinforcement%20Learning/Reinforcement%20Learning/" class="md-nav__link">
+        Reinforcement Learning
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Robotics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Robotics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Robotics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Robotics/Robotics/" class="md-nav__link">
+        Robotics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Robotics/SFM/" class="md-nav__link">
+        SFM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Robotics/SLAM/" class="md-nav__link">
+        SLAM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Robotics/Visual%20Localization/" class="md-nav__link">
+        Visual Localization
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          Transfer Learning
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Transfer Learning" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Transfer Learning
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transfer%20Learning/Transfer%20Learning/" class="md-nav__link">
+        Transfer Learning
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Transformer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Transformer" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Transformer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transformer/Transformer/" class="md-nav__link">
+        Transformer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transformer/Vision%20Transformer/" class="md-nav__link">
+        Vision Transformer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_13">
+          Unsupervised Learning
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unsupervised Learning" data-md-level="1">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Unsupervised Learning
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unsupervised%20Learning/GAN/" class="md-nav__link">
+        GAN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Unsupervised%20Learning/Unsupervised%20Learning/" class="md-nav__link">
+        Unsupervised Learning
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_14">
+          History
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="History" data-md-level="1">
+        <label class="md-nav__title" for="__nav_14">
+          <span class="md-nav__icon md-icon"></span>
+          History
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-09/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-10/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-11/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-12/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-13/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-14/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-15/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-16/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-17/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-18/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-19/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-20/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-21/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-22/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-23/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-24/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-25/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-26/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-27/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-28/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-29/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-11-30/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-01/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-02/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-03/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-04/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-05/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-06/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-07/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-08/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-09/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-10/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-11/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-12/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-13/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-14/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-15/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-16/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-17/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-18/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-19/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-20/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-21/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-22/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-23/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-24/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-25/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-26/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-27/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-28/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-29/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-30/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2021-12-31/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-01/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-02/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-03/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-04/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-05/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-06/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-07/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-08/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-09/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-10/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-11/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-12/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-13/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-14/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-15/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-16/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-17/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-18/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-19/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-20/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-21/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-22/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-23/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-24/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-25/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-26/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-27/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-28/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-29/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-30/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-01-31/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-01/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-02/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-03/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-04/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-05/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-06/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-07/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-08/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-09/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-10/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-11/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-12/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-13/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-14/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-15/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-16/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-17/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-18/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-19/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-20/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-21/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-22/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-23/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-24/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-25/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-26/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-27/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-02-28/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-01/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-02/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-03/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-04/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-05/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-06/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-07/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-08/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-09/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-10/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-11/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-12/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-13/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-14/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-15/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-16/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-17/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-18/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-19/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-20/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-21/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-22/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-23/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-24/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-25/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-26/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-27/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-28/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-29/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-30/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-03-31/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-01/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-02/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-03/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-04/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-05/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-06/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-07/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-08/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-09/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-10/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-11/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-12/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-13/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-14/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-15/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-16/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-17/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-18/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-19/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-20/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-21/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-22/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-23/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-24/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-25/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-26/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-27/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-28/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-29/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-04-30/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-01/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-02/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-03/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-04/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-05/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-06/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-07/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-08/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-09/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-10/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-11/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-12/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-13/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-14/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-15/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-16/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-17/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-18/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-19/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-20/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-21/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-22/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-23/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-24/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-25/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-26/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-27/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-28/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-29/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-30/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-05-31/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-01/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-02/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-03/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-04/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-05/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-06/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-07/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-08/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-09/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-10/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-11/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-12/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-13/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-14/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-15/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-16/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-17/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-18/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-19/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-20/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-21/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-22/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-23/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-24/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-25/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-26/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-27/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-28/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-29/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-06-30/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-01/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-02/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-03/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-04/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-05/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-06/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-07/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-08/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-09/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-10/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-11/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-12/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-13/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-14/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-15/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-16/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-17/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-18/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-19/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-20/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-21/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-22/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-23/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-24/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-25/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-26/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-27/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-28/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-29/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-30/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-07-31/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-01/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-02/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-03/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-04/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-05/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-06/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-07/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-08/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-09/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-10/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-11/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-12/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-08-13/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/2022-11-18/" class="md-nav__link">
+        arxiv-daily
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#few-shot-learning" class="md-nav__link">
+    Few-shot Learning
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/beiyuouo/arxiv-daily/edit/master/docs/Few-shot Learning/Few-shot Learning.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+  <h1>Few shot Learning</h1>
+
+<h3 id="few-shot-learning">Few-shot Learning</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Publish Date</th>
+<th align="center">Title</th>
+<th align="center">Authors</th>
+<th align="center">PDF</th>
+<th align="center">Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>AdaMAE: Adaptive Masking for Efficient Spatiotemporal Learning with Masked Autoencoders</strong></td>
+<td align="center">Wele Gedara Chaminda Bandara et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09120v1">2211.09120v1</a></td>
+<td align="center"><a href="https://github.com/wgcban/adamae">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Token Turing Machines</strong></td>
+<td align="center">Michael S. Ryoo et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09119v1">2211.09119v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>MAGE: MAsked Generative Encoder to Unify Representation Learning and Image Synthesis</strong></td>
+<td align="center">Tianhong Li et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09117v1">2211.09117v1</a></td>
+<td align="center"><a href="https://github.com/lth14/mage">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Real-time quantum error correction beyond break-even</strong></td>
+<td align="center">V. V. Sivak et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09116v1">2211.09116v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>On Measuring the Intrinsic Few-Shot Hardness of Datasets</strong></td>
+<td align="center">Xinran Zhao et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09113v1">2211.09113v1</a></td>
+<td align="center"><a href="https://github.com/colinzhaoust/intrinsic_fewshot_hardness">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Reconstruction of full sky CMB E and B modes spectra removing E-to-B leakage from partial sky using deep learning</strong></td>
+<td align="center">Srikanta Pal et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09112v1">2211.09112v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Holistic Evaluation of Language Models</strong></td>
+<td align="center">Percy Liang et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09110v1">2211.09110v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Interpretable Few-shot Learning with Online Attribute Selection</strong></td>
+<td align="center">Mohammad Reza Zarei et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09107v1">2211.09107v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Comparative Learning: A Sample Complexity Theory for Two Hypothesis Classes</strong></td>
+<td align="center">Lunjia Hu et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09101v1">2211.09101v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Global Optimization with Parametric Function Approximation</strong></td>
+<td align="center">Chong Liu et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09100v1">2211.09100v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>ATEAM: Knowledge Integration from Federated Datasets for Vehicle Feature Extraction using Annotation Team of Experts</strong></td>
+<td align="center">Abhijit Suprem et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09098v1">2211.09098v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Testing geometric representation hypotheses from simulated place cell recordings</strong></td>
+<td align="center">Thibault Niederhauser et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09096v1">2211.09096v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Experimental Analysis of Machine Learning Techniques for Finding Search Radius in Locality Sensitive Hashing</strong></td>
+<td align="center">Omid Jafari et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09093v1">2211.09093v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Optimised Bayesian system identification in quantum devices</strong></td>
+<td align="center">Thomas M. Stace et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09090v1">2211.09090v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Molecular Fingerprints for Robust and Efficient ML-Driven Molecular Generation</strong></td>
+<td align="center">Ruslan N. Tazhigulov et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09086v1">2211.09086v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Galactica: A Large Language Model for Science</strong></td>
+<td align="center">Ross Taylor et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09085v1">2211.09085v1</a></td>
+<td align="center"><a href="https://github.com/paperswithcode/galai">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Technical Report on Neural Language Models and Few-Shot Learning for Systematic Requirements Processing in MDSE</strong></td>
+<td align="center">Vincent Bertram et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09084v1">2211.09084v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Learning Dense and Continuous Optical Flow from an Event Camera</strong></td>
+<td align="center">Zhexiong Wan et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09078v1">2211.09078v1</a></td>
+<td align="center"><a href="https://github.com/danqu130/DCEIFlow">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Applications of Differentiable Physics Simulations in Particle Accelerator Modeling</strong></td>
+<td align="center">Ryan Roussel et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09077v1">2211.09077v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Mitigating Frequency Bias in Next-Basket Recommendation via Deconfounders</strong></td>
+<td align="center">Xiaohan Li et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09072v1">2211.09072v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Ischemic Stroke Lesion Prediction using imbalanced Temporal Deep Gaussian Process (iTDGP)</strong></td>
+<td align="center">Mohsen Soltanpour et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09068v1">2211.09068v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Squeeze flow of micro-droplets: convolutional neural network with trainable and tunable refinement</strong></td>
+<td align="center">Aryan Mehboudi et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09061v1">2211.09061v1</a></td>
+<td align="center"><a href="https://github.com/sqflow/sqflow">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Deep learning of spatial densities in inhomogeneous correlated quantum systems</strong></td>
+<td align="center">Alex Blania et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09050v1">2211.09050v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Anomaly Detection via Multi-Scale Contrasted Memory</strong></td>
+<td align="center">Loic Jezequel et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09041v1">2211.09041v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>CL2R: Compatible Lifelong Learning Representations</strong></td>
+<td align="center">Niccolo Biondi et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09032v1">2211.09032v1</a></td>
+<td align="center"><a href="https://github.com/niccobiondi/compatiblelifelongrepresentation">link</a></td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Region Proposal Network Pre-Training Helps Label-Efficient Object Detection</strong></td>
+<td align="center">Linus Ericsson et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09022v1">2211.09022v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Learning Reward Functions for Robotic Manipulation by Observing Humans</strong></td>
+<td align="center">Minttu Alakuijala et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09019v1">2211.09019v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>Real Estate Attribute Prediction from Multiple Visual Modalities with Missing Data</strong></td>
+<td align="center">Eric Stumpe et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09018v1">2211.09018v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>ToolFlowNet: Robotic Manipulation with Tools via Predicting Tool Flow from Point Clouds</strong></td>
+<td align="center">Daniel Seita et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09006v1">2211.09006v1</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center"><strong>2022-11-16</strong></td>
+<td align="center"><strong>On the Accuracy of Hotelling-Type Tensor Deflation: A Random Tensor Analysis</strong></td>
+<td align="center">Mohamed El Amine Seddik et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2211.09004v1">2211.09004v1</a></td>
+<td align="center">null</td>
+</tr>
+</tbody>
+</table>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../Federated%20Learning/Personalized/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Personalized" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Personalized
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Meta%20Learning/" class="md-footer__link md-footer__link--next" aria-label="Next: Meta Learning" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Meta Learning
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>
