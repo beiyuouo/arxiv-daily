@@ -1,87 +1,90 @@
-"Computer Vision":
-  "Image Classification": '"Image Classification"'
-  "Keypoint Detection": '"Keypoint Detection"OR"Feature Descriptor"'
-  "Image Matching": '"Image Matching"'
-  "Semantic Segmentation": '"Semantic Segmentation"'
-  "Instance Segmentation": '"Instance Segmentation"'
-  "Object Detection": '"Object Detection"OR"Object Detector"'
-  "Object Tracking": '"Object Tracking"OR"Visual Object Tracking"'
-  "Multi-Object Tracking": '"Multi-Object Tracking"OR"Multiple Ojbect Tracking"OR"MOT"OR"Multiple Visual Object Tracking"'
+"Reasoning":
+  "Reasoning": '"Reason"'
 
-"3D Vision":
-  "3D Object Detection": '"3D Object Detection"OR"3D Object Detector"OR"Point Cloud Object Detection"'
-  "3D Object Tracking": '"3D Object Tracking"OR"Point Cloud Object Tracking"OR"3D Multi-Object Tracking"'
-  "Point Cloud": '"Point Cloud"'
-  "Point Cloud Completion": '"Point Cloud Completion"'
-  "Point Cloud Segmentation": '"Point Cloud Segmentation"'
-  "Point Cloud Matching": '"Point Cloud Matching"'
-  "Point Cloud Registration": '"Point Cloud Registration"'
+# "Computer Vision":
+#   "Image Classification": '"Image Classification"'
+#   "Keypoint Detection": '"Keypoint Detection"OR"Feature Descriptor"'
+#   "Image Matching": '"Image Matching"'
+#   "Semantic Segmentation": '"Semantic Segmentation"'
+#   "Instance Segmentation": '"Instance Segmentation"'
+#   "Object Detection": '"Object Detection"OR"Object Detector"'
+#   "Object Tracking": '"Object Tracking"OR"Visual Object Tracking"'
+#   "Multi-Object Tracking": '"Multi-Object Tracking"OR"Multiple Ojbect Tracking"OR"MOT"OR"Multiple Visual Object Tracking"'
 
-"Federated Learning":
-  "Federated Learning": '"Federated Learning"OR"Federated Machine Learning"'
-  "Personalized": '"Federated Learning"AND("Personalized")'
-  "Optimization": '"Federated Learning"AND("Optimization"OR"Optimizated"OR"Optimal")'
-  "Heterogeneous": '"Federated Learning"AND("Heterogeneous"OR"Heterogeneity"OR"non-IID")'
-  "Asynchronous": '"Federated Learning"AND("Asynchronous"OR"Async"OR"FedAsync")'
-  "Privacy": '"Federated Learning"AND("Privacy"OR"Secure"OR"Confidential"OR"Confidentiality")'
-  "Communication": '"Federated Learning"AND("Communication"OR"Communication-Efficient"OR"Communication-Efficiency")'
-  "Efficient": '"Federated Learning"AND("Efficient"OR"Efficiency")'
-  "Benchmark": '"Federated Learning"AND"Benchmark"'
-  "Dataset": '"Federated Learning"AND"Dataset"'
-  "Framework": '"Federated Learning"AND"Framework"'
+# "3D Vision":
+#   "3D Object Detection": '"3D Object Detection"OR"3D Object Detector"OR"Point Cloud Object Detection"'
+#   "3D Object Tracking": '"3D Object Tracking"OR"Point Cloud Object Tracking"OR"3D Multi-Object Tracking"'
+#   "Point Cloud": '"Point Cloud"'
+#   "Point Cloud Completion": '"Point Cloud Completion"'
+#   "Point Cloud Segmentation": '"Point Cloud Segmentation"'
+#   "Point Cloud Matching": '"Point Cloud Matching"'
+#   "Point Cloud Registration": '"Point Cloud Registration"'
 
-"Few-shot Learning":
-  "Few-shot Learning": '"Few-shot Learning"OR"Few-shot"OR"Meta-Learning"OR"One-shot Learning"'
-  "One-shot Learning": '"One-shot Learning"'
-  "Meta Learning": '"Meta Learning"OR"Meta-Learning"'
+# "Federated Learning":
+#   "Federated Learning": '"Federated Learning"OR"Federated Machine Learning"'
+#   "Personalized": '"Federated Learning"AND("Personalized")'
+#   "Optimization": '"Federated Learning"AND("Optimization"OR"Optimizated"OR"Optimal")'
+#   "Heterogeneous": '"Federated Learning"AND("Heterogeneous"OR"Heterogeneity"OR"non-IID")'
+#   "Asynchronous": '"Federated Learning"AND("Asynchronous"OR"Async"OR"FedAsync")'
+#   "Privacy": '"Federated Learning"AND("Privacy"OR"Secure"OR"Confidential"OR"Confidentiality")'
+#   "Communication": '"Federated Learning"AND("Communication"OR"Communication-Efficient"OR"Communication-Efficiency")'
+#   "Efficient": '"Federated Learning"AND("Efficient"OR"Efficiency")'
+#   "Benchmark": '"Federated Learning"AND"Benchmark"'
+#   "Dataset": '"Federated Learning"AND"Dataset"'
+#   "Framework": '"Federated Learning"AND"Framework"'
 
-"Unsupervised Learning":
-  "Unsupervised Learning": '"Unsupervised Learning"'
-  "GAN": '"GAN"OR"Generative Adversarial Network"'
+# "Few-shot Learning":
+#   "Few-shot Learning": '"Few-shot Learning"OR"Few-shot"OR"Meta-Learning"OR"One-shot Learning"'
+#   "One-shot Learning": '"One-shot Learning"'
+#   "Meta Learning": '"Meta Learning"OR"Meta-Learning"'
 
-"Transfer Learning":
-  "Transfer Learning": '"Transfer Learning"OR"Transfer Machine Learning"'
+# "Unsupervised Learning":
+#   "Unsupervised Learning": '"Unsupervised Learning"'
+#   "GAN": '"GAN"OR"Generative Adversarial Network"'
 
-"Contrastive Learning":
-  "Contrastive Learning": '"Contrastive Learning"'
+# "Transfer Learning":
+#   "Transfer Learning": '"Transfer Learning"OR"Transfer Machine Learning"'
 
-"Reinforcement Learning":
-  "Reinforcement Learning": '"Reinforcement Learning"OR"RL"'
+# "Contrastive Learning":
+#   "Contrastive Learning": '"Contrastive Learning"'
 
-"Transformer":
-  "Transformer": '"Transformer"'
-  "Vision Transformer": '"Vision Transformer"OR"Computer Vision Transformer"'
+# "Reinforcement Learning":
+#   "Reinforcement Learning": '"Reinforcement Learning"OR"RL"'
 
-"Graph Neural Network":
-  "Graph Neural Network": '"Graph Neural Network"'
+# "Transformer":
+#   "Transformer": '"Transformer"'
+#   "Vision Transformer": '"Vision Transformer"OR"Computer Vision Transformer"'
 
-"Robotics":
-  "Robotics": '"Robotics"'
-  "SLAM": '"SLAM"'
-  "SFM": '"SFM"OR"Structure from Motion"'
-  "Visual Localization": '"Camera Localization"OR"Visual Localization"OR"Camera Re-localisation"'
+# "Graph Neural Network":
+#   "Graph Neural Network": '"Graph Neural Network"'
 
-"Multi-modal":
-  "Multi-modal": '"Multi-modal"OR"Multimodal"OR"Multi modal"'
-  "VQA": '"VQA"OR"Visual Question Answering"OR"Visual Reasoning"OR"Knowledge-based  Graph"OR"Causal Inference"'
-  "Image Caption": '"Image Caption"OR"Video Caption"'
-  "Text and Image Generation": '"Text and Image Generation"OR"Text-Image Generation"OR"Image and Text Generation"OR"Image-Text Generation"OR"Text-to-Image"OR"Image-to-Text"OR"Language-Image"OR"Image-Language"'
-  "Vision-Language": '"Vision-Language"OR"Language-Vision"OR"Visual-Language"OR"Language-Visual"OR"Visual-Semantic"OR"Semantic-Visual"OR"Visual-Semantic"OR"Semantic-Visual"'
-  "Alignment": '"Alignment"OR"Cross-Modal"OR"Cross Modal"OR"Cross-Modal Alignment"OR"Cross Modal Alignment"OR"Cross-Modal Retrieval"OR"Cross Modal Retrieval"OR"Cross-Modal Generation"OR"Cross Modal Generation"OR"Cross-Modal Translation"OR"Cross Modal Translation"OR"Cross-Modal Fusion"OR"Cross Modal Fusion"OR"Cross-Modal Interaction"OR"Cross Modal Interaction"OR"Cross-Modal Reasoning"OR"Cross Modal Reasoning"OR"Cross-Modal Learning"OR"Cross Modal Learning"OR"Cross-Modal Adaptation"OR"Cross Modal Adaptation"OR"Cross-Modal Representation"OR"Cross Modal Representation"OR"Cross-Modal Understanding"OR"Cross Modal Understanding"OR"Cross-Modal Perception"OR"Cross Modal Perception"OR"Cross-Modal Attention"OR"Cross Modal Attention"OR"Cross-Modal Communication"OR"Cross Modal Communication"OR"Cross-Modal Integration"OR"Cross Modal Integration"OR"Cross-Modal Inference"OR"Cross Modal Inference"OR"Cross-Modal Prediction"OR"Cross Modal Prediction"OR"Cross-Modal Reasoning"OR"Cross Modal Reasoning"OR"Cross-Modal Interaction"OR"Cross Modal Interaction"OR"Cross-Modal Learning"OR"Cross Modal Learning"OR"Cross-Modal Adaptation"OR"Cross Modal Adaptation"OR"Cross-Modal Representation"OR"Cross Modal Representation"OR"Cross-Modal Understanding"OR"Cross Modal Understanding"OR"Cross-Modal Perception"OR"Cross Modal Perception"OR"Cross-Modal Attention"OR"Cross Modal Attention"OR"Cross-Modal Communication"OR"Cross Modal Communication"OR"Cross-Modal Integration"OR"Cross Modal Integration"OR"Cross-Modal Inference"OR"Cross Modal Inference"OR"Cross-Modal Prediction"OR"Cross Modal Prediction"OR"Cross-Modal Reasoning"OR"Cross Modal Reasoning"OR"Cross-Modal Interaction"OR"Cross Modal Interaction"OR"Cross-Modal Learning"OR"Cross Modal Learning"OR"Cross-Modal Adaptation"OR"Cross Modal Adaptation"OR"Cross-Modal Representation"OR"Cross Modal Representation"OR"Cross-Modal Understanding"OR"Cross Modal Understanding"OR"Cross-Modal Perception"OR"Cross modal"'
+# "Robotics":
+#   "Robotics": '"Robotics"'
+#   "SLAM": '"SLAM"'
+#   "SFM": '"SFM"OR"Structure from Motion"'
+#   "Visual Localization": '"Camera Localization"OR"Visual Localization"OR"Camera Re-localisation"'
 
-"Medical Application":
-  "Medical Application": '"Medical Application"OR"Medical Imaging"OR"Medical Image Analysis"OR"Medical Image Processing"'
-  "Medical Image Analysis": '"Medical Image Analysis"OR"Medical Image Processing"'
-  "Medical Multi-modal": '"Medical Multi-modal"OR"Medical Multimodal"OR"Medical Multi modal"'
+# "Multi-modal":
+#   "Multi-modal": '"Multi-modal"OR"Multimodal"OR"Multi modal"'
+#   "VQA": '"VQA"OR"Visual Question Answering"OR"Visual Reasoning"OR"Knowledge-based  Graph"OR"Causal Inference"'
+#   "Image Caption": '"Image Caption"OR"Video Caption"'
+#   "Text and Image Generation": '"Text and Image Generation"OR"Text-Image Generation"OR"Image and Text Generation"OR"Image-Text Generation"OR"Text-to-Image"OR"Image-to-Text"OR"Language-Image"OR"Image-Language"'
+#   "Vision-Language": '"Vision-Language"OR"Language-Vision"OR"Visual-Language"OR"Language-Visual"OR"Visual-Semantic"OR"Semantic-Visual"OR"Visual-Semantic"OR"Semantic-Visual"'
+#   "Alignment": '"Alignment"OR"Cross-Modal"OR"Cross Modal"OR"Cross-Modal Alignment"OR"Cross Modal Alignment"OR"Cross-Modal Retrieval"OR"Cross Modal Retrieval"OR"Cross-Modal Generation"OR"Cross Modal Generation"OR"Cross-Modal Translation"OR"Cross Modal Translation"OR"Cross-Modal Fusion"OR"Cross Modal Fusion"OR"Cross-Modal Interaction"OR"Cross Modal Interaction"OR"Cross-Modal Reasoning"OR"Cross Modal Reasoning"OR"Cross-Modal Learning"OR"Cross Modal Learning"OR"Cross-Modal Adaptation"OR"Cross Modal Adaptation"OR"Cross-Modal Representation"OR"Cross Modal Representation"OR"Cross-Modal Understanding"OR"Cross Modal Understanding"OR"Cross-Modal Perception"OR"Cross Modal Perception"OR"Cross-Modal Attention"OR"Cross Modal Attention"OR"Cross-Modal Communication"OR"Cross Modal Communication"OR"Cross-Modal Integration"OR"Cross Modal Integration"OR"Cross-Modal Inference"OR"Cross Modal Inference"OR"Cross-Modal Prediction"OR"Cross Modal Prediction"OR"Cross-Modal Reasoning"OR"Cross Modal Reasoning"OR"Cross-Modal Interaction"OR"Cross Modal Interaction"OR"Cross-Modal Learning"OR"Cross Modal Learning"OR"Cross-Modal Adaptation"OR"Cross Modal Adaptation"OR"Cross-Modal Representation"OR"Cross Modal Representation"OR"Cross-Modal Understanding"OR"Cross Modal Understanding"OR"Cross-Modal Perception"OR"Cross Modal Perception"OR"Cross-Modal Attention"OR"Cross Modal Attention"OR"Cross-Modal Communication"OR"Cross Modal Communication"OR"Cross-Modal Integration"OR"Cross Modal Integration"OR"Cross-Modal Inference"OR"Cross Modal Inference"OR"Cross-Modal Prediction"OR"Cross Modal Prediction"OR"Cross-Modal Reasoning"OR"Cross Modal Reasoning"OR"Cross-Modal Interaction"OR"Cross Modal Interaction"OR"Cross-Modal Learning"OR"Cross Modal Learning"OR"Cross-Modal Adaptation"OR"Cross Modal Adaptation"OR"Cross-Modal Representation"OR"Cross Modal Representation"OR"Cross-Modal Understanding"OR"Cross Modal Understanding"OR"Cross-Modal Perception"OR"Cross modal"'
 
-"Large-Language Model":
-  "Large-Language Model": '"Large-Language Model"OR"LLM"OR"Large Language Model"OR"Pre-trained Language Model"OR"PLM"OR"Pretrained Language Model"OR"Language Model"OR"LM"OR"Transformer-based Language Model"OR"TB-LM"OR"Transformer based Language Model"'
-"Edge Computing":
-  "Edge Computing": '"Edge Computing"OR"Edge AI"OR"Edge Machine Learning"OR"Edge Learning"OR"Edge Intelligence"OR"Edge Device"OR"Edge Server"OR"Edge Node"OR"Edge Device"OR"Edge Gateway"OR"Edge Router"OR"Edge Switch"OR"Edge Network"OR"Edge Cloud"OR"Edge Data Center"OR"Edge Datacentre"OR"Edge Datacenter"OR"Edge Computing System"OR"Edge Computing Platform"OR"Edge Computing Framework"OR"Edge Computing Architecture"OR"Edge Computing Model"OR"Edge Computing Technology"OR"Edge Computing Application"OR"Edge Computing Service"OR"Edge Computing Solution"OR"Edge Computing Security"OR"Edge Computing Privacy"OR"Edge Computing Trust"OR"Edge Computing Performance"OR"Edge Computing Scalability"OR"Edge Computing Reliability"OR"Edge Computing Availability"OR"Edge Computing Maintainability"OR"Edge Computing Manageability"OR"Edge Computing Flexibility"OR"Edge Computing Interoperability"OR"Edge Computing Standard"OR"Edge Computing Protocol"OR"Edge Computing API"OR"Edge Computing SDK"OR"Edge Computing Library"OR"Edge Computing Tool"OR"Edge Computing Framework"OR"Edge Computing Middleware"OR"Edge Computing Operating System"OR"Edge Computing Virtualization"OR"Edge Computing Containerization"OR"Edge Computing Orchestration"OR"Edge Computing Management"OR"Edge Computing Monitoring"OR"Edge Computing Logging"OR"Edge Computing Debugging"OR"Edge Computing Testing"OR"Edge Computing Verification"OR"Edge Computing Validation"OR"Edge Computing Optimization"OR"Edge Computing Tuning"OR"Edge Computing Configuration"OR"Edge Computing Deployment"OR"Edge Computing Migration"OR"Edge Computing Upgrade"OR"Edge Computing Patch"OR"Edge Computing Backup"OR"Edge Computing Recovery"OR"Edge Computing Restore"OR"Edge Computing Replication"OR"Edge Computing Synchronization"OR"Edge Computing Backup"OR"Edge Computing Recovery"OR"Edge Computing Restore"OR"Edge Computing Replication"OR"Edge Computing Synchronization"OR"Edge Computing Backup"OR"Edge Computing Recovery"OR"Edge Computing Restore"OR"Edge Computing Replication"OR"Edge Computing Synchronization"OR"Edge Computing Backup"OR"Edge Computing Recovery"OR"Edge Computing Restore"'
-  "Efficient": '"Edge Computing"AND"Efficient"OR"Edge Computing Efficiency"'
-  "Secure": '"Edge Computing"AND"Secure"OR"Edge Computing Security"'
-  "Privacy": '"Edge Computing"AND"Privacy"OR"Edge Computing Privacy"'
-  "Trust": '"Edge Computing"AND"Trust"OR"Edge Computing Trust"'
-  "Performance": '"Edge Computing"AND"Performance"OR"Edge Computing Performance"'
-  "Scalability": '"Edge Computing"AND"Scalability"OR"Edge Computing Scalability"'
-  "Reliability": '"Edge Computing"AND"Reliability"OR"Edge Computing Reliability"'
+# "Medical Application":
+#   "Medical Application": '"Medical Application"OR"Medical Imaging"OR"Medical Image Analysis"OR"Medical Image Processing"'
+#   "Medical Image Analysis": '"Medical Image Analysis"OR"Medical Image Processing"'
+#   "Medical Multi-modal": '"Medical Multi-modal"OR"Medical Multimodal"OR"Medical Multi modal"'
+
+# "Large-Language Model":
+#   "Large-Language Model": '"Large-Language Model"OR"LLM"OR"Large Language Model"OR"Pre-trained Language Model"OR"PLM"OR"Pretrained Language Model"OR"Language Model"OR"LM"OR"Transformer-based Language Model"OR"TB-LM"OR"Transformer based Language Model"'
+# "Edge Computing":
+#   "Edge Computing": '"Edge Computing"OR"Edge AI"OR"Edge Machine Learning"OR"Edge Learning"OR"Edge Intelligence"OR"Edge Device"OR"Edge Server"OR"Edge Node"OR"Edge Device"OR"Edge Gateway"OR"Edge Router"OR"Edge Switch"OR"Edge Network"OR"Edge Cloud"OR"Edge Data Center"OR"Edge Datacentre"OR"Edge Datacenter"OR"Edge Computing System"OR"Edge Computing Platform"OR"Edge Computing Framework"OR"Edge Computing Architecture"OR"Edge Computing Model"OR"Edge Computing Technology"OR"Edge Computing Application"OR"Edge Computing Service"OR"Edge Computing Solution"OR"Edge Computing Security"OR"Edge Computing Privacy"OR"Edge Computing Trust"OR"Edge Computing Performance"OR"Edge Computing Scalability"OR"Edge Computing Reliability"OR"Edge Computing Availability"OR"Edge Computing Maintainability"OR"Edge Computing Manageability"OR"Edge Computing Flexibility"OR"Edge Computing Interoperability"OR"Edge Computing Standard"OR"Edge Computing Protocol"OR"Edge Computing API"OR"Edge Computing SDK"OR"Edge Computing Library"OR"Edge Computing Tool"OR"Edge Computing Framework"OR"Edge Computing Middleware"OR"Edge Computing Operating System"OR"Edge Computing Virtualization"OR"Edge Computing Containerization"OR"Edge Computing Orchestration"OR"Edge Computing Management"OR"Edge Computing Monitoring"OR"Edge Computing Logging"OR"Edge Computing Debugging"OR"Edge Computing Testing"OR"Edge Computing Verification"OR"Edge Computing Validation"OR"Edge Computing Optimization"OR"Edge Computing Tuning"OR"Edge Computing Configuration"OR"Edge Computing Deployment"OR"Edge Computing Migration"OR"Edge Computing Upgrade"OR"Edge Computing Patch"OR"Edge Computing Backup"OR"Edge Computing Recovery"OR"Edge Computing Restore"OR"Edge Computing Replication"OR"Edge Computing Synchronization"OR"Edge Computing Backup"OR"Edge Computing Recovery"OR"Edge Computing Restore"OR"Edge Computing Replication"OR"Edge Computing Synchronization"OR"Edge Computing Backup"OR"Edge Computing Recovery"OR"Edge Computing Restore"OR"Edge Computing Replication"OR"Edge Computing Synchronization"OR"Edge Computing Backup"OR"Edge Computing Recovery"OR"Edge Computing Restore"'
+#   "Efficient": '"Edge Computing"AND"Efficient"OR"Edge Computing Efficiency"'
+#   "Secure": '"Edge Computing"AND"Secure"OR"Edge Computing Security"'
+#   "Privacy": '"Edge Computing"AND"Privacy"OR"Edge Computing Privacy"'
+#   "Trust": '"Edge Computing"AND"Trust"OR"Edge Computing Trust"'
+#   "Performance": '"Edge Computing"AND"Performance"OR"Edge Computing Performance"'
+#   "Scalability": '"Edge Computing"AND"Scalability"OR"Edge Computing Scalability"'
+#   "Reliability": '"Edge Computing"AND"Reliability"OR"Edge Computing Reliability"'
