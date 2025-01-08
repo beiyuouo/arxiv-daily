@@ -6,7 +6,7 @@ theme:
   features:
     - navigation.indexes
 
-repo_url: https://github.com/beiyuouo/arxiv-daily
+repo_url: https://github.com/chimdungs/arxiv-daily
 
 markdown_extensions:
   - def_list
@@ -15,8 +15,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 
 plugins:
   - search:
