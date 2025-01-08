@@ -256,10 +256,11 @@ if __name__ == "__main__":
 
     data_collector = dict()
 
-    yaml_path = os.path.join(".", "topic.yml")
+    yaml_path = os.path.join("./database/", "topic.yml")
     yaml_data = get_yaml_data(yaml_path)
 
     # print(yaml_data)
+
 
     keywords = dict(yaml_data)
 

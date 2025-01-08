@@ -7,7 +7,7 @@ from loguru import logger
 
 
 # 定位项目根目录
-SERVER_DIR_PROJECT = dirname(__file__) if "win" in platform else abspath(".")
+SERVER_DIR_PROJECT = dirname(__file__) if "win" in platform else abspath("./")
 
 SERVER_PATH_README = join(SERVER_DIR_PROJECT, "README.md")
 
@@ -44,4 +44,5 @@ logger.add(
 
 # 时区
 TIME_ZONE_CN = pytz.timezone("Asia/Shanghai")
+TIME_ZONE_KR = pytz.timezone("Asia/Seoul")
 TIME_ZONE_NY = pytz.timezone("America/New_York")
