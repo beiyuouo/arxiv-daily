@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      TZ: "Asia/Seoul"
+      TZ: "America/New_York"
       RUN_ENV: "production" # within ['production', 'development']
       POWER: 16
     steps:
@@ -42,7 +42,7 @@ jobs:
           python main.py run --env=${{ env.RUN_ENV }} --power=${{ env.POWER }}
       # ============================================
       # TODO [√] 更新仓库数据
-      # ============================================
+      # ======================================F======
       - name: Setup GIT user
         uses: fregante/setup-git-user@v1
 

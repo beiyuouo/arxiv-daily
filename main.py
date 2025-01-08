@@ -31,7 +31,7 @@ from config import (
     SERVER_PATH_DOCS,
     SERVER_DIR_HISTORY,
     SERVER_PATH_STORAGE_MD,
-    TIME_ZONE_KR,
+    TIME_ZONE_NY,
     logger,
 )
 
@@ -40,9 +40,9 @@ class ToolBox:
     @staticmethod
     def log_date(mode="log"):
         if mode == "log":
-            return str(datetime.now(TIME_ZONE_KR)).split(".")[0]
+            return str(datetime.now(TIME_ZONE_NY)).split(".")[0]
         elif mode == "file":
-            return str(datetime.now(TIME_ZONE_KR)).split(" ")[0]
+            return str(datetime.now(TIME_ZONE_NY)).split(" ")[0]
 
     @staticmethod
     def get_yaml_data() -> dict:
