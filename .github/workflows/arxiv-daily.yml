@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      TZ: "Asia/Shanghai"
+      TZ: "Asia/Seoul"
       RUN_ENV: "production" # within ['production', 'development']
       POWER: 16
     steps:
