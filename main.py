@@ -320,7 +320,7 @@ class _OverloadTasks:
         _pin = f" Automated deployment @ {self.update_time} Asia/Seoul\n"
         _tos = (
             "> Welcome to contribute! Add your topics and keywords in "
-            "[`topic.yml`](https://github.com/beiyuouo/arxiv-daily/blob/main/database/topic.yml).\n"
+            "[`topic.yml`](https://github.com/chimdungs/arxiv-daily/blob/feature/branch-name/database/topic.yml).\n"
         )
         _tos += (
             "> You can also view historical data through the "
