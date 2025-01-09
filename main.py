@@ -31,7 +31,7 @@ from config import (
     SERVER_PATH_DOCS,
     SERVER_DIR_HISTORY,
     SERVER_PATH_STORAGE_MD,
-    TIME_ZONE_NY,
+    TIME_ZONE_KR,
     logger,
 )
 
@@ -40,9 +40,9 @@ class ToolBox:
     @staticmethod
     def log_date(mode="log"):
         if mode == "log":
-            return str(datetime.now(TIME_ZONE_NY)).split(".")[0]
+            return str(datetime.now(TIME_ZONE_KR)).split(".")[0]
         elif mode == "file":
-            return str(datetime.now(TIME_ZONE_NY)).split(" ")[0]
+            return str(datetime.now(TIME_ZONE_KR)).split(" ")[0]
 
     @staticmethod
     def get_yaml_data() -> dict:
@@ -317,7 +317,7 @@ class _OverloadTasks:
 
     def generate_markdown_template(self, content: str):
         _project = f"# arxiv-daily\n"
-        _pin = f" Automated deployment @ {self.update_time} Asia/Shanghai\n"
+        _pin = f" Automated deployment @ {self.update_time} Asia/Seoul\n"
         _tos = (
             "> Welcome to contribute! Add your topics and keywords in "
             "[`topic.yml`](https://github.com/beiyuouo/arxiv-daily/blob/main/database/topic.yml).\n"
