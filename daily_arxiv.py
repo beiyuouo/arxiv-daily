@@ -1,20 +1,9 @@
-#!/usr/bin/env python
-# -*- encoding: utf-8 -*-
-"""
-@File    :   daily_arxiv.py
-@Time    :   2021-10-29 22:34:09
-@Author  :   Bingjie Yan
-@Email   :   bj.yan.pa@qq.com
-@License :   Apache License 2.0
-"""
-
-
+import sqlite3
 import datetime
 import requests
 import json
 import arxiv
 import os
-import shutil
 import yaml
 import time
 import random
@@ -22,283 +11,137 @@ try:
     from yaml import CLoader as Loader, CDumper as Dumper
 except ImportError:
     from yaml import Loader, Dumper
-
 base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
-
-
+# SQLite DB 초기화
+def init_db(db_name="arxiv.db"):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS papers (
+            id TEXT PRIMARY KEY,
+            topic TEXT,
+            subtopic TEXT,
+            publish_date TEXT,
+            title TEXT,
+            authors TEXT,
+            first_author TEXT,
+            pdf_url TEXT,
+            code_url TEXT
+        )
+    """)
+    conn.commit()
+    return conn
+def save_to_db(conn, data):
+    cursor = conn.cursor()
+    for topic, subtopics in data.items():
+        for subtopic, papers in subtopics.items():
+            for paper_id, paper_data in papers.items():
+                # Parse paper_data to extract fields
+                fields = paper_data.split('|')
+                publish_date = fields[1].strip("**")
+                title = fields[2].strip("**")
+                authors = fields[3]
+                first_author = authors.split(",")[0]
+                pdf_url = fields[4].split("(")[-1].strip(")")
+                code_url = fields[5].split("(")[-1].strip(")") if "link" in fields[5] else None
+                # Insert into database
+                cursor.execute("""
+                    INSERT OR IGNORE INTO papers
+                    (id, topic, subtopic, publish_date, title, authors, first_author, pdf_url, code_url)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, (paper_id, topic, subtopic, publish_date, title, authors, first_author, pdf_url, code_url))
+    conn.commit()
 def get_authors(authors, first_author=False):
-    output = str()
-    if first_author == False:
-        output = ", ".join(str(author) for author in authors)
-    else:
-        output = authors[0]
-    return output
-
-
+    return ", ".join(str(author) for author in authors) if not first_author else authors[0]
 def sort_papers(papers):
-    output = dict()
-    keys = list(papers.keys())
-    keys.sort(reverse=True)
-    for key in keys:
-        output[key] = papers[key]
-    return output
-
-
+    return {key: papers[key] for key in sorted(papers.keys(), reverse=True)}
 def get_yaml_data(yaml_file: str):
-    fs = open(yaml_file)
-    data = yaml.load(fs, Loader=Loader)
-    print(data)
+    with open(yaml_file) as fs:
+        data = yaml.load(fs, Loader=Loader)
     return data
-
-
 def get_daily_papers(topic: str, query: str = "slam", max_results=2):
-    # output
     content = dict()
-
-    # content
-    output = dict()
-
     search_engine = arxiv.Search(
         query=query,
         max_results=max_results,
         sort_by=arxiv.SortCriterion.SubmittedDate
     )
-
-    cnt = 0
-
     for result in search_engine.results():
-
         paper_id = result.get_short_id()
         paper_title = result.title
         paper_url = result.entry_id
-
         code_url = base_url + paper_id
-        paper_abstract = result.summary.replace("\n", " ")
         paper_authors = get_authors(result.authors)
         paper_first_author = get_authors(result.authors, first_author=True)
-        primary_category = result.primary_category
-
         publish_time = result.published.date()
-
-        print("Time = ", publish_time,
-              " title = ", paper_title,
-              " author = ", paper_first_author)
-
-        # eg: 2108.09112v1 -> 2108.09112
-        ver_pos = paper_id.find('v')
-        if ver_pos == -1:
-            paper_key = paper_id
-        else:
-            paper_key = paper_id[0:ver_pos]
-
         try:
             r = requests.get(code_url).json()
-            # source code link
             if "official" in r and r["official"]:
-                cnt += 1
                 repo_url = r["official"]["url"]
-                content[
-                    paper_key] = f"|**{publish_time}**|**{paper_title}**|{paper_first_author} et.al.|[{paper_id}]({paper_url})|**[link]({repo_url})**|\n"
+                content[paper_id] = f"|**{publish_time}**|**{paper_title}**|{paper_authors} et.al.|[{paper_id}]({paper_url})|**[link]({repo_url})**|\n"
             else:
-                content[
-                    paper_key] = f"|**{publish_time}**|**{paper_title}**|{paper_first_author} et.al.|[{paper_id}]({paper_url})|null|\n"
-
+                content[paper_id] = f"|**{publish_time}**|**{paper_title}**|{paper_authors} et.al.|[{paper_id}]({paper_url})|null|\n"
         except Exception as e:
-            print(f"exception: {e} with id: {paper_key}")
-
-    data = {topic: content}
-    return data
-
-
-def update_json_file(filename, data):
-    with open(filename, "r") as f:
-        content = f.read()
-        if not content:
-            m = {}
-        else:
-            m = json.loads(content)
-
-    json_data = m.copy()
-
-    # update papers in each keywords
-    for topic in data.keys():
-        if not topic in json_data.keys():
-            json_data[topic] = {}
-        for subtopic in data[topic].keys():
-            papers = data[topic][subtopic]
-
-            if subtopic in json_data[topic].keys():
-                json_data[topic][subtopic].update(papers)
-            else:
-                json_data[topic][subtopic] = papers
-
-    with open(filename, "w") as f:
-        json.dump(json_data, f)
-
-
-def json_to_md(filename, to_web=False):
+            print(f"Exception: {e} with id: {paper_id}")
+    return {topic: content}
+def db_to_md(conn, md_filename="README.md"):
     """
-    @param filename: str
-    @return None
+    SQLite DB 데이터를 읽어 Markdown 파일 생성
     """
-
-    DateNow = datetime.date.today()
-    DateNow = str(DateNow)
-    DateNow = DateNow.replace('-', '.')
-
-    with open(filename, "r") as f:
-        content = f.read()
-        if not content:
-            data = {}
-        else:
-            data = json.loads(content)
-
-    if to_web == False:
-        md_filename = "README.md"
-        # clean README.md if daily already exist else create it
-        with open(md_filename, "w+") as f:
-            pass
-
-        # write data into README.md
-        with open(md_filename, "a+") as f:
-
-            f.write("## Updated on " + DateNow + "\n\n")
-
-            f.write(
-                "> Welcome to contribute! Add your topics and keywords in `topic.yml`\n\n")
-
-            for topic in data.keys():
-                f.write("## " + topic + "\n\n")
-                for subtopic in data[topic].keys():
-                    day_content = data[topic][subtopic]
-                    if not day_content:
-                        continue
-                    # the head of each part
-                    f.write(f"### {subtopic}\n\n")
-
-                    f.write("|Publish Date|Title|Authors|PDF|Code|\n" +
-                            "|---|---|---|---|---|\n")
-
-                    # sort papers by date
-                    day_content = sort_papers(day_content)
-
-                    for _, v in day_content.items():
-                        if v is not None:
-                            f.write(v)
-
-                    f.write(f"\n")
-    else:
-        if os.path.exists('docs'):
-            shutil.rmtree('docs')
-        if not os.path.isdir('docs'):
-            os.mkdir('docs')
-
-        shutil.copyfile('README.md', os.path.join('docs', 'index.md'))
-
-        for topic in data.keys():
-            os.makedirs(os.path.join('docs', topic), exist_ok=True)
-            md_indexname = os.path.join('docs', topic, "index.md")
-            with open(md_indexname, "w+") as f:
-                f.write(f"# {topic}\n\n")
-
-            # print(f'web {topic}')
-
-            for subtopic in data[topic].keys():
-                md_filename = os.path.join('docs', topic, f"{subtopic}.md")
-                # print(f'web {subtopic}')
-
-                # clean README.md if daily already exist else create it
-                with open(md_filename, "w+") as f:
-                    pass
-
-                with open(md_filename, "a+") as f:
-                    day_content = data[topic][subtopic]
-                    if not day_content:
-                        continue
-                    # the head of each part
-                    f.write(f"# {subtopic}\n\n")
-                    f.write("| Publish Date | Title | Authors | PDF | Code |\n")
-                    f.write(
-                        "|:---------|:-----------------------|:---------|:------|:------|\n")
-
-                    # sort papers by date
-                    day_content = sort_papers(day_content)
-
-                    for _, v in day_content.items():
-                        if v is not None:
-                            f.write(v)
-
-                    f.write(f"\n")
-
-                with open(md_indexname, "a+") as f:
-                    day_content = data[topic][subtopic]
-                    if not day_content:
-                        continue
-                    # the head of each part
-                    f.write(f"## {subtopic}\n\n")
-                    f.write("| Publish Date | Title | Authors | PDF | Code |\n")
-                    f.write(
-                        "|:---------|:-----------------------|:---------|:------|:------|\n")
-
-                    # sort papers by date
-                    day_content = sort_papers(day_content)
-
-                    for _, v in day_content.items():
-                        if v is not None:
-                            f.write(v)
-
-                    f.write(f"\n")
-
-    print("finished")
-
-
+    cursor = conn.cursor()
+    # Markdown 파일 초기화
+    with open(md_filename, "w") as f:
+        # Header 작성
+        f.write("# arxiv-daily\n")
+        f.write(f"Updated on {datetime.date.today().strftime('%Y-%m-%d')}\n\n")
+        f.write("> Welcome to contribute! Add your topics and keywords in [`topic.yml`](https://github.com/your-repo).\n\n")
+        # 각 토픽별 데이터 가져오기
+        cursor.execute("SELECT DISTINCT topic FROM papers")
+        topics = cursor.fetchall()
+        for topic in topics:
+            topic_name = topic[0]
+            f.write(f"## {topic_name}\n\n")
+            cursor.execute("SELECT DISTINCT subtopic FROM papers WHERE topic=?", (topic_name,))
+            subtopics = cursor.fetchall()
+            for subtopic in subtopics:
+                subtopic_name = subtopic[0]
+                f.write(f"### {subtopic_name}\n\n")
+                f.write("|Publish Date|Title|Authors|PDF|Code|\n")
+                f.write("|:-----------|:-----|:------|:---|:---|\n")
+                cursor.execute("""
+                    SELECT publish_date, title, authors, pdf_url, code_url
+                    FROM papers
+                    WHERE topic=? AND subtopic=?
+                    ORDER BY publish_date DESC
+                """, (topic_name, subtopic_name))
+                papers = cursor.fetchall()
+                for paper in papers:
+                    publish_date, title, authors, pdf_url, code_url = paper
+                    code_link = f"[link]({code_url})" if code_url else "null"
+                    f.write(f"|{publish_date}|**{title}**|{authors}|[PDF]({pdf_url})|{code_link}|\n")
+                f.write("\n")
+    print(f"Markdown file '{md_filename}' generated successfully.")
 if __name__ == "__main__":
-
-    data_collector = dict()
-
-    yaml_path = os.path.join("./database/", "topic.yml")
+    # Initialize database
+    conn = init_db('./database/arxiv.db')
+    yaml_path = os.path.join("./database", "topic.yml")
     yaml_data = get_yaml_data(yaml_path)
-
-    # print(yaml_data)
-
-
-    keywords = dict(yaml_data)
-
-    for topic in keywords.keys():
-        for subtopic, keyword in dict(keywords[topic]).items():
-
-            # topic = keyword.replace("\"","")
-            print("Keyword: " + subtopic)
+    data_collector = dict()
+    for topic in yaml_data.keys():
+        for subtopic, keyword in yaml_data[topic].items():
+            print("Processing Keyword:", subtopic)
             try:
-                data = get_daily_papers(
-                    subtopic, query=keyword, max_results=10)
-            except:
-                print(f'CANNOT get {subtopic} data from arxiv')
+                data = get_daily_papers(subtopic, query=keyword, max_results=10)
+            except Exception as e:
+                print(f"Error processing {subtopic}: {e}")
                 data = None
-            # time.sleep(random.randint(2, 10))
-
-            if not topic in data_collector.keys():
+            if not topic in data_collector:
                 data_collector[topic] = {}
-
             if data:
                 data_collector[topic].update(data)
-
-            print(data)
-            # print(data_collector)
-
-            print("\n")
-
-    print(data_collector)
-    # update README.md file
-    json_file = "arxiv-daily.json"
-#     if ~os.path.exists(json_file):
-#         with open(json_file,'w')as a:
-#             print("create " + json_file)
-
-    # update json data
-    update_json_file(json_file, data_collector)
-    # json data to markdown
-    json_to_md(json_file)
-
-    # json data to markdown
-    json_to_md(json_file, to_web=True)
+    # Save collected data to SQLite database
+    save_to_db(conn, data_collector)
+    # Generate Markdown file from database
+    db_to_md(conn, 'database/db_markdown/readme.md')
+    conn.close()
+    print("Data saved to SQLite database and Markdown file generated.")

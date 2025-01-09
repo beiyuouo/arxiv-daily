@@ -1,10 +1,23 @@
 site_name: arxiv-daily
 
+# theme:
+#   name: material
+#   custom_dir: overrides
+#   features:
+#     - navigation.indexes
+
 theme:
-  name: material
-  custom_dir: overrides
-  features:
-    - navigation.indexes
+  name: material  # 테마 이름
+  palette:
+    - scheme: default  # 기본 테마
+      primary: indigo
+      accent: pink
+    - scheme: slate  # 다크 모드 테마
+      primary: deep-purple
+      accent: cyan
+
+  highlightjs: true
+
 
 repo_url: https://github.com/chimdungs/arxiv-daily
 
@@ -28,4 +41,4 @@ plugins:
 extra:
   analytics:
     provider: google
-    property: UA-145083103-1
+    # property: UA-145083103-1
