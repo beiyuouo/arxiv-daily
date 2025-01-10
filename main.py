@@ -11,6 +11,7 @@
 import json.decoder
 import os.path
 import shutil
+import sqlite3 
 
 from gevent import monkey
 
@@ -324,7 +325,7 @@ class _OverloadTasks:
         )
         _tos += (
             "> You can also view historical data through the "
-            "[storage](https://github.com/beiyuouo/arxiv-daily/blob/main/database/storage).\n"
+            "[storage](https://github.com/chimdungs/arxiv-daily/blob/feature/branch-name/database/storage).\n"
         )
 
         _form = _project + _pin + _tos + content
@@ -352,6 +353,85 @@ class _OverloadTasks:
 
         return {"hook": _topic_md, "content": _content_md}
 
+# DB 업데이트 구현 :
+# (1) SQLite DB 초기화
+def init_db(db_name="arxiv.db"):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS papers (
+            id TEXT PRIMARY KEY,
+            topic TEXT,
+            subtopic TEXT,
+            publish_date TEXT,
+            title TEXT,
+            authors TEXT,
+            first_author TEXT,
+            pdf_url TEXT,
+            code_url TEXT
+        )
+    """)
+    conn.commit()
+    return conn
+
+# (2) SQLite DB에 데이터 저장
+def save_to_db(conn, data):
+    cursor = conn.cursor()
+    for topic, subtopics in data.items():
+        for subtopic, papers in subtopics.items():
+            for paper_id, paper_data in papers.items():
+                publish_date = paper_data.get("publish_time")
+                title = paper_data.get("title")
+                authors = paper_data.get("authors")
+                first_author = authors.split(",")[0]
+                pdf_url = paper_data.get("paper_url")
+                code_url = paper_data.get("repo", None)
+
+                # DB에 삽입 (중복 데이터는 무시)
+                cursor.execute("""
+                    INSERT OR IGNORE INTO papers
+                    (id, topic, subtopic, publish_date, title, authors, first_author, pdf_url, code_url)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, (paper_id, topic, subtopic, publish_date, title, authors, first_author, pdf_url, code_url))
+    conn.commit()
+
+# (3) SQLite DB 데이터를 읽어 Markdown 파일 생성
+def db_to_md(conn, md_filename="README.md"):
+
+    cursor = conn.cursor()
+    # Markdown 파일 초기화
+    with open(md_filename, "w") as f:
+        # Header 작성
+        f.write("# arxiv-daily\n")
+        f.write(f"Updated on {datetime.date.today().strftime('%Y-%m-%d')}\n\n")
+        f.write("> Welcome to contribute! Add your topics and keywords in [`topic.yml`](https://github.com/your-repo).\n\n")
+        # 각 토픽별 데이터 가져오기
+        cursor.execute("SELECT DISTINCT topic FROM papers")
+        topics = cursor.fetchall()
+        for topic in topics:
+            topic_name = topic[0]
+            f.write(f"## {topic_name}\n\n")
+            cursor.execute("SELECT DISTINCT subtopic FROM papers WHERE topic=?", (topic_name,))
+            subtopics = cursor.fetchall()
+            for subtopic in subtopics:
+                subtopic_name = subtopic[0]
+                f.write(f"### {subtopic_name}\n\n")
+                f.write("|Publish Date|Title|Authors|PDF|Code|\n")
+                f.write("|:-----------|:-----|:------|:---|:---|\n")
+                cursor.execute("""
+                    SELECT publish_date, title, authors, pdf_url, code_url
+                    FROM papers
+                    WHERE topic=? AND subtopic=?
+                    ORDER BY publish_date DESC
+                """, (topic_name, subtopic_name))
+                papers = cursor.fetchall()
+                for paper in papers:
+                    publish_date, title, authors, pdf_url, code_url = paper
+                    code_link = f"[link]({code_url})" if code_url else "null"
+                    f.write(f"|{publish_date}|**{title}**|{authors}|[PDF]({pdf_url})|{code_link}|\n")
+                f.write("\n")
+    print(f"Markdown file '{md_filename}' generated successfully.")
+
 
 class Scaffold:
     def __init__(self):
@@ -370,6 +450,10 @@ class Scaffold:
         @param env: Optional with [development production]
         @return:
         """
+        # Step 1: SQLite DB 초기화
+        conn = init_db("./database/arxiv.db")  # DB 파일 경로 설정
+
+        
         # Get tasks
         context = ToolBox.get_yaml_data()
 
@@ -386,6 +470,21 @@ class Scaffold:
 
         # Overload tasks
         template_ = booster.overload_tasks()
+
+        # Step 6: Save collected data to SQLite DB
+        collected_data = {}
+        while not booster.channel.empty():
+            context = booster.channel.get_nowait()
+            topic = context["topic"]
+            subtopic = context["subtopic"]
+            papers = context["paper"]
+
+            if topic not in collected_data:
+                collected_data[topic] = {}
+            collected_data[topic][subtopic] = papers
+
+        # Save to database
+        save_to_db(conn, collected_data)
 
         # Replace project README file.
         if env == "production":
@@ -407,7 +506,7 @@ class Scaffold:
                     os.path.join(SERVER_DIR_HISTORY, file_format),
                 )
                 logger.info(f"{file} is copied to {SERVER_DIR_HISTORY}.")
-
+        
 
 if __name__ == "__main__":
     Fire(Scaffold)
