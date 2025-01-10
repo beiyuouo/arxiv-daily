@@ -6,7 +6,7 @@ on:
     - cron: "* 0/12 * * *" #'*/60 * * * *'    # 매 12시간마다 실행
 
   push:
-    branches: [branch/feature-name]  # 특정 브랜치로 변경
+    branches: [feature/branch-name]  # 특정 브랜치로 변경
 
 jobs:
   build:
