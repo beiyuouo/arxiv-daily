@@ -50,7 +50,7 @@ jobs:
       - name: Push done work
         run: |
           git diff --exit-code || git commit -am "Automated deployment @ $(date '+%Y-%m-%d %H:%M:%S') ${{ env.TZ }}"
-          git push --force origin main
+          git push origin origin featrue/branch-name
       # ============================================
       # TODO [√] 更新 mkdocs
       # ============================================
