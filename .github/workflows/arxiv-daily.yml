@@ -3,9 +3,10 @@ name: Run Arxiv Papers Daily
 on:
   workflow_dispatch:
   schedule:
-    - cron: "* 0/12 * * *" #'*/60 * * * *'
+    - cron: "* 0/12 * * *" #'*/60 * * * *'    # 매 12시간마다 실행
+
   push:
-    branches: [main]
+    branches: [branch/feature-name]  # 특정 브랜치로 변경
 
 jobs:
   build:

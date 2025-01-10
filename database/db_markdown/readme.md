@@ -1,7 +1,7 @@
 # arxiv-daily
  Automated deployment @ 2025-01-09 15:03:37 Asia/Seoul
 > Welcome to contribute! Add your topics and keywords in [`topic.yml`](https://github.com/chimdungs/arxiv-daily/blob/feature/branch-name/database/topic.yml).
-> You can also view historical data through the [storage](https://github.com/beiyuouo/arxiv-daily/blob/main/database/storage).
+> You can also view historical data through the [storage](https://github.com/chimdungs/arxiv-daily/tree/feature/branch-name/database/storage).
 
 ## 3D Vision
 
