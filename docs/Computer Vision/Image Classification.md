@@ -1,35 +1,34 @@
-# Image Classification
 
-| Publish Date | Title | Authors | PDF | Code |
-|:---------|:-----------------------|:---------|:------|:------|
-|**2025-01-10**|**Merging Feed-Forward Sublayers for Compressed Transformers**|Neha Verma et.al.|[2501.06126v1](http://arxiv.org/abs/2501.06126v1)|**[link](https://github.com/nverma1/merging-ffs-compression)**|
-|**2025-01-10**|**Averaged Adam accelerates stochastic optimization in the training of deep neural network approximations for partial differential equation and optimal control problems**|Steffen Dereich et.al.|[2501.06081v1](http://arxiv.org/abs/2501.06081v1)|**[link](https://github.com/deeplearningmethods/averaged-adam)**|
-|**2025-01-10**|**Constrained Over-the-Air Model Updating for Wireless Online Federated Learning with Delayed Information**|Juncheng Wang et.al.|[2501.05637v1](http://arxiv.org/abs/2501.05637v1)|null|
-|**2025-01-09**|**A 1Mb mixed-precision quantized encoder for image classification and patch-based compression**|Van Thien Nguyen et.al.|[2501.05097v1](http://arxiv.org/abs/2501.05097v1)|null|
-|**2025-01-09**|**A CT Image Classification Network Framework for Lung Tumors Based on Pre-trained MobileNetV2 Model and Transfer learning, And Its Application and Market Analysis in the Medical field**|Ziyang Gao et.al.|[2501.04996v1](http://arxiv.org/abs/2501.04996v1)|null|
-|**2025-01-09**|**MambaHSI: Spatial-Spectral Mamba for Hyperspectral Image Classification**|Yapeng Li et.al.|[2501.04944v1](http://arxiv.org/abs/2501.04944v1)|null|
-|**2025-01-09**|**A New Perspective on Privacy Protection in Federated Learning with Granular-Ball Computing**|Guannan Lai et.al.|[2501.04940v1](http://arxiv.org/abs/2501.04940v1)|**[link](https://github.com/aignlai/grbfl)**|
-|**2025-01-09**|**Online Continual Learning: A Systematic Literature Review of Approaches, Challenges, and Benchmarks**|Seyed Amir Bidaki et.al.|[2501.04897v1](http://arxiv.org/abs/2501.04897v1)|**[link](https://github.com/kiyan-rezaee/systematic-literature-review-on-online-continual-learning)**|
-|**2025-01-08**|**Planarian Neural Networks: Evolutionary Patterns from Basic Bilateria Shaping Modern Artificial Neural Network Architectures**|Ziyuan Huang et.al.|[2501.04700v1](http://arxiv.org/abs/2501.04700v1)|null|
-|**2025-01-08**|**Discrete Wavelet Transform-Based Capsule Network for Hyperspectral Image Classification**|Zhiqiang Gao et.al.|[2501.04643v1](http://arxiv.org/abs/2501.04643v1)|null|
-|**2021-11-05**|**Learning of Frequency-Time Attention Mechanism for Automatic Modulation Recognition**|Shangao Lin et.al.|[2111.03258v1](http://arxiv.org/abs/2111.03258v1)|null|
-|**2021-11-01**|**Deep AUC Maximization for Medical Image Classification: Challenges and Opportunities**|Tianbao Yang et.al.|[2111.02400v1](http://arxiv.org/abs/2111.02400v1)|null|
-|**2021-11-03**|**FAST: Searching for a Faster Arbitrarily-Shaped Text Detector with Minimalist Kernel Representation**|Zhe Chen et.al.|[2111.02394v1](http://arxiv.org/abs/2111.02394v1)|**[link](https://github.com/whai362/pan_pp.pytorch)**|
-|**2021-11-03**|**Intrusion Detection: Machine Learning Baseline Calculations for Image Classification**|Erik Larsen et.al.|[2111.02378v1](http://arxiv.org/abs/2111.02378v1)|null|
-|**2021-11-03**|**Virus-MNIST: Machine Learning Baseline Calculations for Image Classification**|Erik Larsen et.al.|[2111.02375v1](http://arxiv.org/abs/2111.02375v1)|null|
-|**2021-11-02**|**Fitness Landscape Footprint: A Framework to Compare Neural Architecture Search Problems**|Kalifou René Traoré et.al.|[2111.01584v1](http://arxiv.org/abs/2111.01584v1)|null|
-|**2021-11-01**|**Arch-Net: Model Distillation for Architecture Agnostic Model Deployment**|Weixin Xu et.al.|[2111.01135v1](http://arxiv.org/abs/2111.01135v1)|**[link](https://github.com/megvii-research/Arch-Net)**|
-|**2021-11-01**|**When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?**|Lijie Fan et.al.|[2111.01124v1](http://arxiv.org/abs/2111.01124v1)|null|
-|**2021-11-01**|**Combating Noise: Semi-supervised Learning by Region Uncertainty Quantification**|Zhenyu Wang et.al.|[2111.00928v1](http://arxiv.org/abs/2111.00928v1)|null|
-|**2021-11-01**|**Hierarchical Image Classification with A Literally Toy Dataset**|Long He et.al.|[2111.00892v1](http://arxiv.org/abs/2111.00892v1)|null|
-|**2021-10-31**|**Revealing and Protecting Labels in Distributed Training**|Trung Dang et.al.|[2111.00556v1](http://arxiv.org/abs/2111.00556v1)|**[link](https://github.com/googleinterns/learning-bag-of-words)**|
-|**2021-10-31**|**Smart(Sampling)Augment: Optimal and Efficient Data Augmentation for Semantic Segmentation**|Misgana Negassi et.al.|[2111.00487v1](http://arxiv.org/abs/2111.00487v1)|null|
-|**2021-10-30**|**MFNet: Multi-class Few-shot Segmentation Network with Pixel-wise Metric Learning**|Miao Zhang et.al.|[2111.00232v1](http://arxiv.org/abs/2111.00232v1)|null|
-|**2021-10-30**|**Approximation properties of Residual Neural Networks for Kolmogorov PDEs**|Jonas Baggenstos et.al.|[2111.00215v1](http://arxiv.org/abs/2111.00215v1)|null|
-|**2021-10-30**|**Dynamic Differential-Privacy Preserving SGD**|Jian Du et.al.|[2111.00173v1](http://arxiv.org/abs/2111.00173v1)|null|
-|**2021-10-30**|**RMSMP: A Novel Deep Neural Network Quantization Framework with Row-wise Mixed Schemes and Multiple Precisions**|Sung-En Chang et.al.|[2111.00153v1](http://arxiv.org/abs/2111.00153v1)|null|
-|**2021-10-29**|**Domain Agnostic Few-Shot Learning For Document Intelligence**|Jaya Krishna Mandivarapu et.al.|[2111.00007v1](http://arxiv.org/abs/2111.00007v1)|null|
-|**2021-10-29**|**Training Integrable Parameterizations of Deep Neural Networks in the Infinite-Width Limit**|Karl Hajjar et.al.|[2110.15596v1](http://arxiv.org/abs/2110.15596v1)|**[link](https://github.com/karl-hajjar/wide-networks)**|
-|**2021-10-29**|**UDIS: Unsupervised Discovery of Bias in Deep Visual Recognition Models**|Arvindkumar Krishnakumar et.al.|[2110.15499v1](http://arxiv.org/abs/2110.15499v1)|null|
-|**2021-10-28**|**Explaining Latent Representations with a Corpus of Examples**|Jonathan Crabbé et.al.|[2110.15355v1](http://arxiv.org/abs/2110.15355v1)|**[link](https://github.com/jonathancrabbe/simplex)**|
-
+### Image Classification
+|Publish Date|Title|Authors|PDF|Code|
+| :---: | :---: | :---: | :---: | :---: |
+|**2025-01-10**|**The Radiowave Hunt for Young Stellar Object Emission and Demographics (RADIOHEAD): A Radio Luminosity${-}$Spectral Type Dependence in Taurus${-}$Auriga YSOs**|Ramisa Akther Rahman et.al.|[2501.06188v1](http://arxiv.org/abs/2501.06188v1)|null|
+|**2025-01-10**|**Multi-subject Open-set Personalization in Video Generation**|Tsai-Shien Chen et.al.|[2501.06187v1](http://arxiv.org/abs/2501.06187v1)|null|
+|**2025-01-10**|**VideoAuteur: Towards Long Narrative Video Generation**|Junfei Xiao et.al.|[2501.06173v1](http://arxiv.org/abs/2501.06173v1)|null|
+|**2025-01-10**|**PySpatial: A High-Speed Whole Slide Image Pathomics Toolkit**|Yuechen Yang et.al.|[2501.06151v1](http://arxiv.org/abs/2501.06151v1)|null|
+|**2025-01-10**|**Multilingual Performance of a Multimodal Artificial Intelligence System on Multisubject Physics Concept Inventories**|Gerd Kortemeyer et.al.|[2501.06143v1](http://arxiv.org/abs/2501.06143v1)|null|
+|**2025-01-10**|**Merging Feed-Forward Sublayers for Compressed Transformers**|Neha Verma et.al.|[2501.06126v1](http://arxiv.org/abs/2501.06126v1)|[link](https://github.com/nverma1/merging-ffs-compression)|
+|**2025-01-10**|**Fleurs-SLU: A Massively Multilingual Benchmark for Spoken Language Understanding**|Fabian David Schmidt et.al.|[2501.06117v1](http://arxiv.org/abs/2501.06117v1)|null|
+|**2025-01-10**|**ELFATT: Efficient Linear Fast Attention for Vision Transformers**|Chong Wu et.al.|[2501.06098v1](http://arxiv.org/abs/2501.06098v1)|null|
+|**2025-01-10**|**Averaged Adam accelerates stochastic optimization in the training of deep neural network approximations for partial differential equation and optimal control problems**|Steffen Dereich et.al.|[2501.06081v1](http://arxiv.org/abs/2501.06081v1)|[link](https://github.com/deeplearningmethods/averaged-adam)|
+|**2025-01-10**|**Scale-up Unlearnable Examples Learning with High-Performance Computing**|Yanfan Zhu et.al.|[2501.06080v1](http://arxiv.org/abs/2501.06080v1)|null|
+|**2025-01-10**|**Explaining k-Nearest Neighbors: Abductive and Counterfactual Explanations**|Pablo Barceló et.al.|[2501.06078v1](http://arxiv.org/abs/2501.06078v1)|null|
+|**2025-01-10**|**A monthly sub-national Harmonized Food Insecurity Dataset for comprehensive analysis and predictive modeling**|Machefer Mélissande et.al.|[2501.06076v1](http://arxiv.org/abs/2501.06076v1)|null|
+|**2025-01-10**|**The ultraviolet luminosity function of star-forming galaxies between redshifts of 0.4 and 0.6**|M. J. Page et.al.|[2501.06075v1](http://arxiv.org/abs/2501.06075v1)|null|
+|**2025-01-10**|**Unveiling Malware Patterns: A Self-analysis Perspective**|Fangtian Zhong et.al.|[2501.06071v1](http://arxiv.org/abs/2501.06071v1)|null|
+|**2025-01-10**|**Advection-based multiframe iterative correction for pressure estimation from velocity fields**|Junwei Chen et.al.|[2501.06060v1](http://arxiv.org/abs/2501.06060v1)|null|
+|**2025-01-10**|**COMIX: Compositional Explanations using Prototypes**|Sarath Sivaprasad et.al.|[2501.06059v1](http://arxiv.org/abs/2501.06059v1)|null|
+|**2025-01-10**|**Multifractal Analysis of Physiological Signals: A Novel Approach to Optimizing Pacing Strategy in a Pilot Study**|Véronique Billat et.al.|[2501.06055v1](http://arxiv.org/abs/2501.06055v1)|null|
+|**2025-01-10**|**Enhancing, Refining, and Fusing: Towards Robust Multi-Scale and Dense Ship Detection**|Congxia Zhao et.al.|[2501.06053v1](http://arxiv.org/abs/2501.06053v1)|null|
+|**2025-01-10**|**B1+ mapping near metallic implants using turbo spin echo pulse sequences**|Iman Khodarahmi et.al.|[2501.06049v1](http://arxiv.org/abs/2501.06049v1)|null|
+|**2025-01-10**|**IoT Firmware Version Identification Using Transfer Learning with Twin Neural Networks**|Ashley Andrews et.al.|[2501.06033v1](http://arxiv.org/abs/2501.06033v1)|null|
+|**2025-01-10**|**Generate, Transduct, Adapt: Iterative Transduction with VLMs**|Oindrila Saha et.al.|[2501.06031v1](http://arxiv.org/abs/2501.06031v1)|null|
+|**2025-01-10**|**Geometric-Based Nail Segmentation for Clinical Measurements**|Bernat Galmés et.al.|[2501.06027v1](http://arxiv.org/abs/2501.06027v1)|null|
+|**2025-01-10**|**BRIGHT: A globally distributed multimodal building damage assessment dataset with very-high-resolution for all-weather disaster response**|Hongruixuan Chen et.al.|[2501.06019v1](http://arxiv.org/abs/2501.06019v1)|[link](https://github.com/chenhongruixuan/bright)|
+|**2025-01-10**|**The Role of Type $II_{\infty}$ v.Neumann Algebras and their Tensor Structure in Quantum Gravity}}**|Manfred Requardt et.al.|[2501.06009v1](http://arxiv.org/abs/2501.06009v1)|null|
+|**2025-01-10**|**CamCtrl3D: Single-Image Scene Exploration with Precise 3D Camera Control**|Stefan Popov et.al.|[2501.06006v1](http://arxiv.org/abs/2501.06006v1)|null|
+|**2025-01-10**|**DeltaGNN: Graph Neural Network with Information Flow Control**|Kevin Mancini et.al.|[2501.06002v1](http://arxiv.org/abs/2501.06002v1)|[link](https://github.com/basiralab/deltagnn)|
+|**2025-01-10**|**Minimizing Occlusion Effect on Multi-View Camera Perception in BEV with Multi-Sensor Fusion**|Sanjay Kumar et.al.|[2501.05997v1](http://arxiv.org/abs/2501.05997v1)|null|
+|**2025-01-10**|**An Attention-Guided Deep Learning Approach for Classifying 39 Skin Lesion Types**|Sauda Adiv Hanum et.al.|[2501.05991v1](http://arxiv.org/abs/2501.05991v1)|[link](https://github.com/akabircs/skin-lesions-classification)|
+|**2025-01-10**|**Constraining constructions with WordNet: pros and cons for the semantic annotation of fillers in the Italian Constructicon**|Flavio Pisciotta et.al.|[2501.05990v1](http://arxiv.org/abs/2501.05990v1)|null|
+|**2025-01-10**|**Full-domain POD modes from PIV asynchronous patches**|Iacopo Tirelli et.al.|[2501.05988v1](http://arxiv.org/abs/2501.05988v1)|null|
