@@ -439,19 +439,7 @@ class Scaffold:
 
         # Overload tasks
         template_ = booster.overload_tasks()
-         # Load repository URLs from configuration
-        repo_list = ToolBox.get_repository_list(config_path="database/awesome_repos.yml")
-
-        # Iterate over each repository and update
-        for repo_url in repo_list:
-            repo_name = repo_url.split("/")[-1].replace(".git", "")
-            repo_dir = os.path.join(SERVER_PATH_DOCS, "AwesomePages", repo_name)
-            target_readme_path = os.path.join(SERVER_PATH_DOCS, f"{repo_name}_README.md")
-
-            # Clone or update the repository and copy README.md
-            ToolBox.update_readme(repo_url=repo_url, repo_dir=repo_dir, target_path=target_readme_path)
-
-        logger.info("All repositories updated successfully.")
+        
 
         # Replace project README file.
         if env == "production":
@@ -474,14 +462,14 @@ class Scaffold:
                 )
                 logger.info(f"{file} is copied to {SERVER_DIR_HISTORY}.")
 
-         # Load repository URLs from configuration
+        # Load repository URLs from configuration
         repo_list = ToolBox.get_repository_list(config_path="database/awesome_repos.yml")
 
         # Iterate over each repository and update
         for repo_url in repo_list:
             repo_name = repo_url.split("/")[-1].replace(".git", "")
-            repo_dir = os.path.join(SERVER_PATH_DOCS, "Awesome_Pages", repo_name)
-            target_readme_path = os.path.join(SERVER_PATH_DOCS, f"{repo_name}_README.md")
+            repo_dir = os.path.join(SERVER_PATH_DOCS, "🔥Awesome_Pages", repo_name)
+            target_readme_path = os.path.join(repo_dir, f"{repo_name}_README.md")
 
             # Clone or update the repository and copy README.md
             ToolBox.update_readme(repo_url=repo_url, repo_dir=repo_dir, target_path=target_readme_path)
