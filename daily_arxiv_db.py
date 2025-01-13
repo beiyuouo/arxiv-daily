@@ -94,7 +94,7 @@ def get_daily_papers(topic: str, query: str = "slam", max_results=2):
     return {topic: content}
 
     
-def db_to_md(conn, md_filename="README.md"):
+def db_to_md(conn, md_filename="./database/db_markdown/readme.md"):
     """
     SQLite DB 데이터를 읽어 Markdown 파일 생성
     """

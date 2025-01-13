@@ -39,7 +39,6 @@ jobs:
       # ============================================
       - name: Run daily_arxiv.py
         run: |
-          python daily_arxiv.py run --env=${{ env.RUN_ENV }} --power=${{ env.POWER }}
           python daily_arxiv_db.py run --env=${{ env.RUN_ENV }} --power=${{ env.POWER }} 
       # ============================================
       # TODO [√] 测试 Scaffold 脚手架指令

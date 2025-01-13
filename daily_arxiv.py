@@ -188,6 +188,7 @@ def json_to_md(filename, to_web=False):
 
                     f.write(f"\n")
     else:
+        
         if os.path.exists('docs'):
             shutil.rmtree('docs')
         if not os.path.isdir('docs'):
@@ -198,6 +199,7 @@ def json_to_md(filename, to_web=False):
         for topic in data.keys():
             os.makedirs(os.path.join('docs', topic), exist_ok=True)
             md_indexname = os.path.join('docs', topic, "index.md")
+            # md_indexname = "./README.md"
             with open(md_indexname, "w+") as f:
                 f.write(f"# {topic}\n\n")
 
@@ -248,7 +250,7 @@ def json_to_md(filename, to_web=False):
                             f.write(v)
 
                     f.write(f"\n")
-
+            
     print("finished")
 
 
