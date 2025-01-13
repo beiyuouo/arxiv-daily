@@ -66,6 +66,59 @@ class ToolBox:
         except json.decoder.JSONDecodeError as e:
             logger.error(e)
 
+    @staticmethod
+    def get_repository_list(config_path: str = "database/awesome_repos.yml") -> list:
+        """
+        Load repository URLs from a YAML configuration file.
+
+        Args:
+            config_path (str): Path to the YAML configuration file.
+
+        Returns:
+            list: A list of repository URLs.
+        """
+        if not os.path.exists(config_path):
+            logger.error(f"Configuration file not found: {config_path}")
+            return []
+
+        with open(config_path, "r", encoding="utf8") as f:
+            try:
+                data = yaml.load(f, Loader=yaml.SafeLoader)
+                return data.get("repositories", [])
+            except Exception as e:
+                logger.error(f"Failed to read configuration file {config_path}: {e}")
+                return []
+
+    @staticmethod
+    # Awesome github pages 업데이트 동기화 함수
+    def update_readme(repo_url: str, repo_dir: str, target_path: str):
+        """
+        Clone the repo if not exists, or pull the latest changes, and copy README.md to the target path.
+
+        Args:
+            repo_url (str): URL of the repository to pull updates from.
+            repo_dir (str): Local directory where the repository is cloned.
+            target_path (str): Path to copy the updated README.md file.
+        """
+        if not os.path.exists(repo_dir):
+            # Clone the repository if it doesn't exist
+            os.system(f"git clone {repo_url} {repo_dir}")
+            logger.info(f"Cloned repository: {repo_url}")
+        else:
+            # Pull the latest changes if repository exists
+            try:
+                os.system(f"git -C {repo_dir} pull")
+                logger.info(f"Pulled latest changes for {repo_dir}")
+            except Exception as e:
+                logger.error(f"Failed to pull latest changes for {repo_dir}: {e}")
+
+        # Copy the README.md file to the target path
+        readme_path = os.path.join(repo_dir, "README.md")
+        if os.path.exists(readme_path):
+            shutil.copyfile(readme_path, target_path)
+            logger.info(f"Updated README.md copied to {target_path}")
+        else:
+            logger.warning(f"README.md not found in {repo_dir}")
 
 class CoroutineSpeedup:
     """轻量化的协程控件"""
@@ -386,7 +439,20 @@ class Scaffold:
 
         # Overload tasks
         template_ = booster.overload_tasks()
+         # Load repository URLs from configuration
+        repo_list = ToolBox.get_repository_list(config_path="database/awesome_repos.yml")
 
+        # Iterate over each repository and update
+        for repo_url in repo_list:
+            repo_name = repo_url.split("/")[-1].replace(".git", "")
+            repo_dir = os.path.join(SERVER_PATH_DOCS, "AwesomePages", repo_name)
+            target_readme_path = os.path.join(SERVER_PATH_DOCS, f"{repo_name}_README.md")
+
+            # Clone or update the repository and copy README.md
+            ToolBox.update_readme(repo_url=repo_url, repo_dir=repo_dir, target_path=target_readme_path)
+
+        logger.info("All repositories updated successfully.")
+        
         # Replace project README file.
         if env == "production":
             with open(SERVER_PATH_README, "w", encoding="utf8") as f:
@@ -407,6 +473,20 @@ class Scaffold:
                     os.path.join(SERVER_DIR_HISTORY, file_format),
                 )
                 logger.info(f"{file} is copied to {SERVER_DIR_HISTORY}.")
+
+         # Load repository URLs from configuration
+        repo_list = ToolBox.get_repository_list(config_path="database/awesome_repos.yml")
+
+        # Iterate over each repository and update
+        for repo_url in repo_list:
+            repo_name = repo_url.split("/")[-1].replace(".git", "")
+            repo_dir = os.path.join(SERVER_PATH_DOCS, "AwesomePages", repo_name)
+            target_readme_path = os.path.join(SERVER_PATH_DOCS, f"{repo_name}_README.md")
+
+            # Clone or update the repository and copy README.md
+            ToolBox.update_readme(repo_url=repo_url, repo_dir=repo_dir, target_path=target_readme_path)
+
+        logger.info("All awesome repositories updated successfully.")
 
 
 if __name__ == "__main__":

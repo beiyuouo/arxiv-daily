@@ -135,3 +135,7 @@ dmypy.json
 .idea
 database/logs
 .vscode
+
+
+# huggingface model(for post OCR and double-checking)
+./EraX-VL-7B-V1.0
