@@ -9,9 +9,9 @@ from loguru import logger
 # 定位项目根目录
 SERVER_DIR_PROJECT = dirname(__file__) if "win" in platform else abspath("./")
 
-SERVER_PATH_README = join(SERVER_DIR_PROJECT, "README.md")                                  # default
+#SERVER_PATH_README = join(SERVER_DIR_PROJECT, "README.md")                                  # default
 
-# SERVER_PATH_README = "/home/gyusam/Desktop/arxiv-daily/database/db_markdown/readme.md"    # DB용 markdown (아직 동기화를 못해서 기본폴더 readme.md는 자동화되기때문에 이걸로 연결 안함)
+SERVER_PATH_README = "/home/gyusam/Desktop/arxiv-daily/database/db_markdown/readme.md"    # DB용 markdown 
 SERVER_PATH_DOCS = join(SERVER_DIR_PROJECT, "docs")
 
 os.makedirs(SERVER_PATH_DOCS, exist_ok=True)

@@ -35,6 +35,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      # 여기 부분에 main.py 코드 전에 daily_arxiv.py 파일을 먼저 실행시킨 후 진행을 하면 12시간마다 업데이트가 완료됌.
+      # ============================================
+      - name: Run daily_arxiv.py
+        run: |
+          python daily_arxiv.py run --env=${{ env.RUN_ENV }} --power=${{ env.POWER }}
       # ============================================
       # TODO [√] 测试 Scaffold 脚手架指令
       # ============================================
