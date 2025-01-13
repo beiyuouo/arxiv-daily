@@ -11,7 +11,7 @@ SERVER_DIR_PROJECT = dirname(__file__) if "win" in platform else abspath("./")
 
 #SERVER_PATH_README = join(SERVER_DIR_PROJECT, "README.md")                                  # default
 
-SERVER_PATH_README = "/home/gyusam/Desktop/arxiv-daily/database/db_markdown/readme.md"    # DB용 markdown 
+SERVER_PATH_README = "./database/db_markdown/readme.md"    # DB용 markdown 
 SERVER_PATH_DOCS = join(SERVER_DIR_PROJECT, "docs")
 
 os.makedirs(SERVER_PATH_DOCS, exist_ok=True)
