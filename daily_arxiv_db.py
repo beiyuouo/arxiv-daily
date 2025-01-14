@@ -11,8 +11,12 @@ try:
     from yaml import CLoader as Loader, CDumper as Dumper
 except ImportError:
     from yaml import Loader, Dumper
-    
+
+from using_ocr import load_model, loading_pdf_image, perform_ocr, extract_link
+
 base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
+MODEL_PATH = "./EraX-VL-7B-V1.0"
+
 
 # SQLite DB 초기화
 def init_db(db_name="arxiv.db"):
@@ -66,7 +70,7 @@ def get_yaml_data(yaml_file: str):
         data = yaml.load(fs, Loader=Loader)
     return data
 
-def get_daily_papers(topic: str, query: str = "slam", max_results=2):
+def get_daily_papers(topic: str, query: str = "slam", max_results=2, model=None, processor=None):
     content = dict()
     search_engine = arxiv.Search(
         query=query,
@@ -88,13 +92,25 @@ def get_daily_papers(topic: str, query: str = "slam", max_results=2):
                 repo_url = r["official"]["url"]
                 content[paper_id] = f"|**{publish_time}**|**{paper_title}**|{paper_authors} et.al.|[{paper_id}]({paper_url})|**[link]({repo_url})**|\n"
             else: # OCR 
-                content[paper_id] = f"|**{publish_time}**|**{paper_title}**|{paper_authors} et.al.|[{paper_id}]({paper_url})|null|\n"
+                arxiv_url = os.path.join('https://arxiv.org/pdf', paper_id)
+                # PDF 첫번째 페이지 
+                # import pdb 
+                # pdb.set_trace()
+                image_path = loading_pdf_image(arxiv_url) 
+                result = perform_ocr(model, processor, image_path)
+                
+                link = extract_link(result)
+                print(result)
+                print(f"Paper ID : {paper_id} | Link : {link}")
+
+                
+                content[paper_id] = f"|**{publish_time}**|**{paper_title}**|{paper_authors} et.al.|[{paper_id}]({paper_url})|{link}|\n"
         except Exception as e:
             print(f"Exception: {e} with id: {paper_id}")
     return {topic: content}
 
     
-def db_to_md(conn, md_filename="./database/db_markdown/readme.md"):
+def db_to_md(conn, md_filename="README.md"):
     """
     SQLite DB 데이터를 읽어 Markdown 파일 생성
     """
@@ -138,11 +154,18 @@ if __name__ == "__main__":
     yaml_path = os.path.join("./database", "topic.yml")
     yaml_data = get_yaml_data(yaml_path)
     data_collector = dict()
+
+
+    # Loading Erax Model......
+    model, processor = load_model(MODEL_PATH) 
+
+
+
     for topic in yaml_data.keys():
         for subtopic, keyword in yaml_data[topic].items():
             print("Processing Keyword:", subtopic)
             try:
-                data = get_daily_papers(subtopic, query=keyword, max_results=10)
+                data = get_daily_papers(subtopic, query=keyword, max_results=10, model=model, processor=processor)
             except Exception as e:
                 print(f"Error processing {subtopic}: {e}")
                 data = None
