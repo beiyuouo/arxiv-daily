@@ -91,17 +91,20 @@ def get_daily_papers(topic: str, query: str = "slam", max_results=2, model=None,
             if "official" in r and r["official"]:
                 repo_url = r["official"]["url"]
                 content[paper_id] = f"|**{publish_time}**|**{paper_title}**|{paper_authors} et.al.|[{paper_id}]({paper_url})|**[link]({repo_url})**|\n"
-            else: # OCR 
-                arxiv_url = os.path.join('https://arxiv.org/pdf', paper_id)
-                # PDF 첫번째 페이지 
-                # import pdb 
-                # pdb.set_trace()
-                image_path = loading_pdf_image(arxiv_url) 
-                result = perform_ocr(model, processor, image_path)
+            
+            
+            # Code가 없는 경우는 아예 저장하지 않고 진행해보자
+            # else: # OCR 
+            #     arxiv_url = os.path.join('https://arxiv.org/pdf', paper_id)
+            #     # PDF 첫번째 페이지 
+            #     # import pdb 
+            #     # pdb.set_trace()
+            #     image_path = loading_pdf_image(arxiv_url) 
+            #     result = perform_ocr(model, processor, image_path)
                 
-                link = extract_link(result)
-                print(result)
-                print(f"Paper ID : {paper_id} | Link : {link}")
+            #     link = extract_link(result)
+            #     print(result)
+            #     print(f"Paper ID : {paper_id} | Link : {link}")
 
                 
                 content[paper_id] = f"|**{publish_time}**|**{paper_title}**|{paper_authors} et.al.|[{paper_id}]({paper_url})|{link}|\n"
