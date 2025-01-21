@@ -139,9 +139,9 @@ def db_to_md(conn, md_filename="./database/db_markdown/huggface_readme.md"):
 
 
 if __name__ == "__main__":
-    db_path = './database/huggingface_model.db'
+    db_path = './database/huggingface_model__.db'
     conn = initialize_database(db_path)
-    hf_news = fetch_huggingface_news(limit=100)
+    hf_news = fetch_huggingface_news(limit=5)
 
 
     insert_hf_news(hf_news, db_path) 
