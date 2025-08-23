@@ -7,6 +7,7 @@
   "Object Detection": '"Object Detection"OR"Object Detector"'
   "Object Tracking": '"Object Tracking"OR"Visual Object Tracking"'
   "Multi-Object Tracking": '"Multi-Object Tracking"OR"Multiple Ojbect Tracking"OR"MOT"OR"Multiple Visual Object Tracking"'
+  "Saliency prediction": '"Saliency prediction"'
 
 "3D Vision":
   "3D Object Detection": '"3D Object Detection"OR"3D Object Detector"OR"Point Cloud Object Detection"'
